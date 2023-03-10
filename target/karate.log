@@ -1,0 +1,399 @@
+23:43:23.750 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:43:25.466 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:26.128 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+23:43:26.490 [main] DEBUG com.intuit.karate - response time in milliseconds: 352
+1 < 200
+1 < Server: nginx
+1 < Date: Wed, 08 Mar 2023 18:13:26 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 5
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+23:43:26.525 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+23:43:47.325 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:43:49.031 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:43:49.662 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+23:43:50.024 [main] DEBUG com.intuit.karate - response time in milliseconds: 356
+1 < 200
+1 < Server: nginx
+1 < Date: Wed, 08 Mar 2023 18:13:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 6
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+23:43:50.055 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+23:45:09.725 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:45:11.301 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:45:11.877 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+23:45:12.261 [main] DEBUG com.intuit.karate - response time in milliseconds: 379
+1 < 200
+1 < Server: nginx
+1 < Date: Wed, 08 Mar 2023 18:15:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 6
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+23:45:12.292 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+23:53:02.297 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:53:04.137 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:53:04.819 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+23:53:05.153 [main] DEBUG com.intuit.karate - response time in milliseconds: 332
+1 < 200
+1 < Server: nginx
+1 < Date: Wed, 08 Mar 2023 18:23:05 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 7
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+23:53:05.186 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+23:55:31.885 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+23:55:33.552 [main] INFO  com.intuit.karate - karate.env system property was: null 
+23:55:34.194 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+23:55:34.608 [main] DEBUG com.intuit.karate - response time in milliseconds: 408
+1 < 200
+1 < Server: nginx
+1 < Date: Wed, 08 Mar 2023 18:25:34 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 7
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+23:55:34.638 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+11:05:10.239 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:05:11.598 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:05:12.126 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+11:05:12.480 [main] DEBUG com.intuit.karate - response time in milliseconds: 352
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 09 Mar 2023 05:35:12 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 9
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+11:05:12.503 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
+15:31:47.453 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:31:49.155 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:31:49.800 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 409
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+15:31:50.174 [main] DEBUG com.intuit.karate - response time in milliseconds: 372
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 09 Mar 2023 10:01:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 8
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Request expired."}}
+
+15:31:50.201 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Request expired."
+  }
+}
+ 
