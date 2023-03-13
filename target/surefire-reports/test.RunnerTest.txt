@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: test.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.554 s - in test.RunnerTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.155 s <<< FAILURE! - in test.RunnerTest
+testAll  Time elapsed: 1.145 s  <<< ERROR!
+java.lang.RuntimeException: mismatched input '/' expecting <EOF>
+

@@ -6,8 +6,10 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    JWTtoken: 'jsonwebtoken'
   }
+
+
   if (env == 'dev') {
     // customize
     // e.g. config.foo = 'bar';
