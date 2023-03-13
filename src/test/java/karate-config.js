@@ -1,20 +1,19 @@
 function fn() {
-  var env = karate.env; // get system property 'karate.env'
-  karate.log('karate.env system property was:', env);
   if (!env) {
-    env = 'dev';
+    env = 'staging';
   }
   var config = {
-    env: env,
-    JWTtoken: 'jsonwebtoken'
+    // variables & api paths
   }
-
-
-  if (env == 'dev') {
-    // customize
-    // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
-    // customize
+  //'karate.env' - Get system property
+  var env = karate.env;
+  karate.log('karate.env system property was:', env);
+  if (env == 'prod') {
+    config.baseUrl = '';
+  } else if (env == 'staging') {
+    config.baseUrl = '';
   }
+  karate.configure('connectTimeout', 5000);
+  karate.configure('readTimeout', 5000);
   return config;
 }
