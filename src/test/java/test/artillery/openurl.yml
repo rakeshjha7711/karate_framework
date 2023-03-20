@@ -1,8 +1,8 @@
 config:
   target: "https://opscheckertest.livquik.com/signin"
   phases:
-    - duration: 5
-      arrivalRate: 10
+    - duration: 60
+      arrivalRate: 20
  
 scenarios:
   - name: "Retrieve data"
