@@ -27,12 +27,12 @@ public class cucumber_report {
   }
 
   public static void generateReport(String karateOutputPath) {
-		    Collection<File> jsonFiles = FileUtilities.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
+		 /*   //Collection<File> jsonFiles = FileUtilities.listFiles(new File(karateOutputPath), new String[] {"json"}, true);
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
         Configuration config = new Configuration();
         ReportBuilder reportBuilder = new ReportBuilder();
-        reportBuilder.generateReports();
+        reportBuilder.generateReports();*/
     }
   
   }

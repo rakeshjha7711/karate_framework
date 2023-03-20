@@ -46,5 +46,4 @@ Feature: process payment api testing to check error message validation
   And match $.result.message == 'Request expired.'
   * print response
   
-/home/livquik/Desktop/karate_demo/myproject/token.json
   

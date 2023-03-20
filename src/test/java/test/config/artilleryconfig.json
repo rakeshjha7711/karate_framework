@@ -1,0 +1,17 @@
+{
+  "target": "https://m2pload.livquik.com",
+  "phases": [
+    {
+      "duration": 600,
+      "arrivalRate": 10,
+      "rampTo": 200
+    }
+  ],
+  "processor": "../helpers/artilleryfaker.js",
+  "defaults": {
+    "headers": {
+      "x-thunder": true,
+      "x-breeze": true
+    }
+  }
+}
