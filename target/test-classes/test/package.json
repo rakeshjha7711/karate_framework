@@ -20,7 +20,9 @@
     "moment": "^2.29.4",
     "save": "^2.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  },
   "nodemonConfig": {
     "ext": "js, proto",
     "ignore": [

@@ -1,0 +1,11 @@
+config:
+  target: "https://opscheckertest.livquik.com/signin"
+  phases:
+    - duration: 5
+      arrivalRate: 10
+ 
+scenarios:
+  - name: "Retrieve data"
+    flow:
+      - get:
+          url: "/example"

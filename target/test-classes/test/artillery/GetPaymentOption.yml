@@ -1,0 +1,43 @@
+config:
+  target: "https://apitest.livquik.com"
+  phases:
+    - duration: 60
+      arrivalRate: 20
+      name: "Warming up"
+    - duration: 240
+      arrivalRate: 20
+      rampTo: 100
+      name: "Ramping up"
+    - duration: 500
+      arrivalRate: 100
+      name: "Sustained load"
+  processor: "./processor.js"
+  defaults:
+    headers:
+      Content-Type: application/json
+      Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+      TENANT: KOTAK_BNPL
+      public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+      User-Agent: PostmanRuntime/7.31.1 
+scenarios:
+  - name: "get payment option"
+    flow:
+      - post:
+          url: "/api/v1/bnpl/getPaymentOptions"
+          beforeRequest: generateData
+          json:
+            mobileNumber: "919656454343"
+            deviceId: "GFHGAFD6765757DFS"
+            channel: "app"
+            merchantId: "uk@wad7Si"
+            paymentChannelId: "kotak_bnpl_cardless_*"
+            otp: "123456"
+            source: "secure-2fr"
+            amount: "1"
+          capture:
+            - json: $.statusCode
+              as: statusCode
+            - json: $.message
+              as: message
+            - json: $.status
+              as: status

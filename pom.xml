@@ -24,12 +24,7 @@
         </dependency>		
     </dependencies>
 
-    <dependency>
-<groupId>net.masterthought</groupId>
-<artifactId>cucumber-reporting</artifactId>
-<version>5.7.2</version>
-<scope>test</scope>
-</dependency>
+
    
   
     <build>

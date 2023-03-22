@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("d9886234-c8ab-4427-88da-bad24082eeac",{name:"livquik"});
+    posthog.capture("report_feature",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>test.processPayment _error_validationCheck</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-03-19 04:04:34 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:32]"><span>[1:32]</span> <span>testing with invalid mobile number</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">test/processPayment _error_validationCheck.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">process payment api testing to check error message validation</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:32]</span>
+                <span class="scenario-name">testing with invalid mobile number</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>887</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://apitest.livquik.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">16:04:33.175 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayload =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">56</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">{
+  &quot;mobileNumber&quot;: &quot;&quot;,
+  &quot;deviceId&quot;: &quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,
+ &quot;channel&quot;: &quot;app&quot;,
+  &quot;merchantId&quot;: &quot;uk@wad7Si&quot;,
+  &quot;amount&quot;: &quot;60&quot;,
+  &quot;currency&quot;: &quot;INR&quot;,
+  &quot;merchantOrderId&quot;: &quot;KOTAK-120903534354311&quot;,
+  &quot;callbackUrl&quot;: &quot;https://localhost:8000/api/processPayment&quot;,
+  &quot;emiSubvention&quot;: false,
+  &quot;emiTransaction&quot;: false,
+   &quot;paymentMode&quot;: {
+  &quot;bnpl&quot;: [{
+      &quot;paymentChannelId&quot;: &quot;kotak_bnpl_cardless_*&quot;,
+      &quot;amount&quot;:&quot;60&quot;
+  }]
+    },
+    
+  &quot;source&quot;: &quot;secure-2fr&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/bnpl/processPayment&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header TENANT = &#39;KOTAK_BNPL&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header public-key = &#39;Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header User-Agent = &#39;PostmanRuntime/7.31.1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">780</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">16:04:33.718 request:
+1 &gt; POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+1 &gt; TENANT: KOTAK_BNPL
+1 &gt; public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 &gt; User-Agent: PostmanRuntime/7.31.1
+1 &gt; Content-Length: 396
+1 &gt; Host: apitest.livquik.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;mobileNumber&quot;:&quot;&quot;,&quot;deviceId&quot;:&quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,&quot;channel&quot;:&quot;app&quot;,&quot;merchantId&quot;:&quot;uk@wad7Si&quot;,&quot;amount&quot;:&quot;60&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;merchantOrderId&quot;:&quot;KOTAK-120903534354311&quot;,&quot;callbackUrl&quot;:&quot;https:\/\/localhost:8000\/api\/processPayment&quot;,&quot;emiSubvention&quot;:false,&quot;emiTransaction&quot;:false,&quot;paymentMode&quot;:{&quot;bnpl&quot;:[{&quot;paymentChannelId&quot;:&quot;kotak_bnpl_cardless_*&quot;,&quot;amount&quot;:&quot;60&quot;}]},&quot;source&quot;:&quot;secure-2fr&quot;}
+
+16:04:34.077 response time in milliseconds: 356
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Sun, 19 Mar 2023 10:34:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Strict-Transport-Security: max-age=432000; includeSubDomains
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Powered-By: Express
+1 &lt; vary: Accept-Encoding
+1 &lt; vary: Origin
+1 &lt; X-Kong-Upstream-Latency: 7
+1 &lt; X-Kong-Proxy-Latency: 2
+1 &lt; Via: kong/2.7.0.0-enterprise-edition
+{&quot;result&quot;:{&quot;status&quot;:&quot;failed&quot;,&quot;statusCode&quot;:&quot;PAY_1002&quot;,&quot;message&quot;:&quot;Request expired.&quot;}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.result.status == &#39;failed&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.result.statusCode == &#39;PAY_1002&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.result.message == &#39;Request expired.&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.45">16:04:34.105 [print] {
+  &quot;result&quot;: {
+    &quot;status&quot;: &quot;failed&quot;,
+    &quot;statusCode&quot;: &quot;PAY_1002&quot;,
+    &quot;message&quot;: &quot;Request expired.&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,9 +1,14 @@
 config:
   target: 'https://apitest.livquik.com'
-  phases:
-    - duration: 1
-      arrivalRate: 2
-      rampTo: 5
+  environments:
+    load:
+      phases:
+        - duration: 60
+          arrivalRate: 100
+    functional:
+      phases:
+        - duration: 1
+          arrivalCount: 1
   defaults:
     headers:
       x-thunder: true
