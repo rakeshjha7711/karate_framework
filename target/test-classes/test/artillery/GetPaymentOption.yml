@@ -1,21 +1,19 @@
 config:
-  target: "https://apitest.livquik.com"
+  ensure:
+    thresholds:  #A threshold check ensures that the aggregate value of a metric is under some threshold value.
+      # p99 of response time must be <250:
+      - "https.response_time.p99": 250
+      # p95 of response time must be <100:
+      - "https.response_time.p95": 100
+    maxErrorRate: 1  #will make Artillery exit with a non-zero exit code if the total error rate exceeded 1%
+  target: 'https://apitest.livquik.com'
   phases:
     - duration: 60
-      arrivalRate: 20
-      name: "Warming up"
-    - duration: 240
-      arrivalRate: 20
-      rampTo: 100
-      name: "Ramping up"
-    - duration: 500
-      arrivalRate: 100
-      name: "Sustained load"
-  processor: "./processor.js"
+      arrivalRate: 50   #generates 50 virtual users every second for 1 minutes.
   defaults:
     headers:
       Content-Type: application/json
-      Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0
+      Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTEyNDAwMDAwMzAwIiwiZGV2aWNlSWQiOiI3MTU0N0I3RS1EMDBFLTQ2NkMtOTQ2RS0yOTI5MzZGOEVCRDMiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjEuNSIsImN1cnJlbmN5IjoiSU5SIiwibWVyY2hhbnRPcmRlcklkIjoiS09UQUstMTIwOTAyOTQ0MzU0MzM2NSIsImNhbGxiYWNrVXJsIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvcHJvY2Vzc1BheW1lbnQiLCJlbWlTdWJ2ZW50aW9uIjpmYWxzZSwiZW1pVHJhbnNhY3Rpb24iOmZhbHNlLCJwYXltZW50TW9kZSI6eyJibnBsIjpbeyJwYXltZW50Q2hhbm5lbElkIjoicmluZ19ibnBsX2NhcmRsZXNzXyoiLCJhbW91bnQiOiIxLjUifV19LCJzb3VyY2UiOiJzZWN1cmUtMmZyIiwiaWF0IjoxNjc2NTQ2MzQzLCJleHAiOjE2NzY1NDcyNDN9.fIXxVScE8jcFKvu4YZTc8FyuG7Vfv3ZLNSlVubKzOQ0
       TENANT: KOTAK_BNPL
       public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
       User-Agent: PostmanRuntime/7.31.1 
@@ -24,10 +22,9 @@ scenarios:
     flow:
       - post:
           url: "/api/v1/bnpl/getPaymentOptions"
-          beforeRequest: generateData
           json:
-            mobileNumber: "919656454343"
-            deviceId: "GFHGAFD6765757DFS"
+            mobileNumber: "+912400000300"
+            deviceId: "9F0D7162-F90E-41B7-8357-88891C33F0ED"
             channel: "app"
             merchantId: "uk@wad7Si"
             paymentChannelId: "kotak_bnpl_cardless_*"
@@ -37,7 +34,5 @@ scenarios:
           capture:
             - json: $.statusCode
               as: statusCode
-            - json: $.message
-              as: message
-            - json: $.status
-              as: status
+          expect:
+            - statusCode: 200

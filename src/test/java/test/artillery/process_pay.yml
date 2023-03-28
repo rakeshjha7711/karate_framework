@@ -1,14 +1,15 @@
 config:
+  ensure:
+    thresholds:  #A threshold check ensures that the aggregate value of a metric is under some threshold value.
+      # p99 of response time must be <250:
+      - "https.response_time.p99": 250
+      # p95 of response time must be <100:
+      - "https.response_time.p95": 100
+    maxErrorRate: 1  #will make Artillery exit with a non-zero exit code if the total error rate exceeded 1%
   target: 'https://apitest.livquik.com'
-  environments:
-    load:
-      phases:
-        - duration: 60
-          arrivalRate: 100
-    functional:
-      phases:
-        - duration: 1
-          arrivalCount: 1
+  phases:
+    - duration: 60
+      arrivalRate: 5   #generates 5 virtual users every second for 1 minutes
   defaults:
     headers:
       x-thunder: true

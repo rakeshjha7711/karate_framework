@@ -6,7 +6,7 @@ class RunnerTest {
 
     @Karate.Test
     Karate process_payment() {
-        return Karate.run("js_executor").relativeTo(getClass());
+        return Karate.run("readJSON").relativeTo(getClass());
     }
 
 

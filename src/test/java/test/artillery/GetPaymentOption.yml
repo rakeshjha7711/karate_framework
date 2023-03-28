@@ -9,10 +9,7 @@ config:
   target: 'https://apitest.livquik.com'
   phases:
     - duration: 60
-      arrivalRate: 50   #generates 50 virtual users every second for 1 minutes
-    - duration: 300
-      arrivalRate: 100  #generates 100 virtual users every second for 5 minutes
-      rampTo: 5
+      arrivalRate: 50   #generates 50 virtual users every second for 1 minutes.
   defaults:
     headers:
       Content-Type: application/json

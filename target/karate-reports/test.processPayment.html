@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,12 +50,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-03-13 03:38:16 pm</div>
+    <div>2023-03-23 03:35:29 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:34]"><span>[1:34]</span> <span>Testing a POST api of process payment</span></a>
           </div>
         </div>
@@ -81,8 +81,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>806</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>937</span>
             </div>
           </div>
           <div class="step-row">
@@ -114,7 +114,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">15:38:15.517 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.5">15:35:28.687 karate.env system property was: null 
 </div>   
 
   
@@ -127,19 +127,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def requestPayload =</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">62</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.7">{
+  <div class="preformatted" data-parent="0.6">{
   &quot;mobileNumber&quot;: &quot;+918722000003&quot;,
   &quot;deviceId&quot;: &quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,
  &quot;channel&quot;: &quot;app&quot;,
@@ -209,7 +209,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request requestPayload</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">18</div>
   </div>
 
    
@@ -262,7 +262,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">38</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;jsonwebtoken&#39;</span>
+        <span>And</span>&nbsp;<span>header Authorization = &#39;cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -377,7 +377,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">723</div>
+    <div class="time-cell passed">823</div>
   </div>
 
    
@@ -386,10 +386,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.42">15:38:16.007 request:
+  <div class="preformatted" data-parent="0.42">15:35:29.249 request:
 1 &gt; POST https://apitest.livquik.com/api/v1/bnpl/processPayment
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Authorization: jsonwebtoken
+1 &gt; Authorization: cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
 1 &gt; TENANT: KOTAK_BNPL
 1 &gt; public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
 1 &gt; User-Agent: PostmanRuntime/7.31.1
@@ -399,10 +399,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;mobileNumber&quot;:&quot;+918722000003&quot;,&quot;deviceId&quot;:&quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,&quot;channel&quot;:&quot;app&quot;,&quot;merchantId&quot;:&quot;uk@wad7Si&quot;,&quot;amount&quot;:&quot;60&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;merchantOrderId&quot;:&quot;KOTAK-120903534354311&quot;,&quot;callbackUrl&quot;:&quot;https:\/\/localhost:8000\/api\/processPayment&quot;,&quot;emiSubvention&quot;:false,&quot;emiTransaction&quot;:false,&quot;paymentMode&quot;:{&quot;bnpl&quot;:[{&quot;paymentChannelId&quot;:&quot;kotak_bnpl_cardless_*&quot;,&quot;amount&quot;:&quot;60&quot;}]},&quot;source&quot;:&quot;secure-2fr&quot;}
 
-15:38:16.379 response time in milliseconds: 368
+15:35:29.633 response time in milliseconds: 381
 1 &lt; 200
 1 &lt; Server: nginx
-1 &lt; Date: Mon, 13 Mar 2023 10:08:16 GMT
+1 &lt; Date: Thu, 23 Mar 2023 10:05:29 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -428,8 +428,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Powered-By: Express
 1 &lt; vary: Accept-Encoding
 1 &lt; vary: Origin
-1 &lt; X-Kong-Upstream-Latency: 27
-1 &lt; X-Kong-Proxy-Latency: 5
+1 &lt; X-Kong-Upstream-Latency: 9
+1 &lt; X-Kong-Proxy-Latency: 1
 1 &lt; Via: kong/2.7.0.0-enterprise-edition
 {&quot;result&quot;:{&quot;status&quot;:&quot;failed&quot;,&quot;statusCode&quot;:&quot;PAY_1002&quot;,&quot;message&quot;:&quot;Invalid credentials.&quot;}}
 
@@ -480,7 +480,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match $.result.status == &#39;failed&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">19</div>
+    <div class="time-cell passed">15</div>
   </div>
 
    
@@ -508,7 +508,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match $.result.statusCode == &#39;PAY_1002&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -530,13 +530,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.46">
-      <div class="step-ref failed">46</div>
+      <div class="step-ref passed">46</div>
       
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match $.result.message == &#39;Request expired.&#39;</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.result.message == &#39;Invalid credentials.&#39;</span>
       </div>
     </div>
-    <div class="time-cell failed">3</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -545,15 +545,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.46">15:38:16.417 classpath:test/processPayment.feature:46
-And match $.result.message == &#39;Request expired.&#39;
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  &#39;Invalid credentials.&#39;
-  &#39;Request expired.&#39;
-
-classpath:test/processPayment.feature:46
-</div>   
+     
 
   
 
@@ -566,13 +558,13 @@ classpath:test/processPayment.feature:46
 
   <div class="step-row">
     <div class="step-container" id="0.47">
-      <div class="step-ref skipped">47</div>
+      <div class="step-ref passed">47</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -581,7 +573,15 @@ classpath:test/processPayment.feature:46
 
   
 
-     
+  <div class="preformatted" data-parent="0.47">15:35:29.664 [print] {
+  &quot;result&quot;: {
+    &quot;status&quot;: &quot;failed&quot;,
+    &quot;statusCode&quot;: &quot;PAY_1002&quot;,
+    &quot;message&quot;: &quot;Invalid credentials.&quot;
+  }
+}
+ 
+</div>   
 
   
 
