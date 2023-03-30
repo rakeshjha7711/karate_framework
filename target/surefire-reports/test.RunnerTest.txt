@@ -1,19 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: test.RunnerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 5.027 s <<< FAILURE! - in test.RunnerTest
-process_payment[1][1]  Time elapsed: 3.252 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.933 s <<< FAILURE! - in test.RunnerTest
+process_payment[1][1]  Time elapsed: 2.954 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 js failed:
 >>>>
-01: read('token.feature')
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
 <<<<
-org.graalvm.polyglot.PolyglotException: mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
-- com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:74)
-- com.intuit.karate.core.Feature.read(Feature.java:63)
-- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:65)
-- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
 - <js>.:program(Unnamed:1)
 
-classpath:test/readJSON.feature:5
+classpath:test/readJSON.feature:7
 

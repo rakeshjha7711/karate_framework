@@ -2,12 +2,25 @@ Feature: process payment api testing to check error message validation
 
 
   Background:
+    * def jsonwebtoken = read('token.json')   //read tone from json file
+    Then print jsonwebtoken.token             
     * url 'https://apitest.livquik.com'
     * def requestPayload =
+# * def token = 'token.json'
+# * print token
+
+#Examples:
+#| read('classpath:test/' +token) |
+#var token = read('classpath:token.json' );
+#* def token = read('../token.json')
+ # Then print "Function name =>" , token()
+
+#* def getRandomValue = function() {return math.floor((10) * math.random());}
+ #Then print "Function name =>" , getRandomValue()
 
   """
       {
-  "mobileNumber": "",
+  "mobileNumber": "+918722000003",
   "deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
  "channel": "app",
   "merchantId": "uk@wad7Si",
@@ -29,11 +42,12 @@ Feature: process payment api testing to check error message validation
       }
 
   """
-  Scenario: testing with invalid mobile number
-  Given path '/api/v1/bnpl/processPayment'
+  Scenario: Testing a POST api of process payment
+  Given url baseurl+'/api/v1/bnpl/processPayment'
   And request requestPayload
   And header Content-Type = 'application/json'
-  And header Authorization = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4NzIyMDAwMDAzIiwiZGV2aWNlSWQiOiI5RjBENzE2Mi1GOTBFLTQxQjctODM1Ny04ODg5MUMzM0YwRUQiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjYwIiwiY3VycmVuY3kiOiJJTlIiLCJtZXJjaGFudE9yZGVySWQiOiJLT1RBSy0xMjA5MDM1MzQzNTQzMTEiLCJjYWxsYmFja1VybCI6Imh0dHBzOi8vbG9jYWxob3N0OjgwMDAvYXBpL3Byb2Nlc3NQYXltZW50IiwiZW1pU3VidmVudGlvbiI6ZmFsc2UsImVtaVRyYW5zYWN0aW9uIjpmYWxzZSwicGF5bWVudE1vZGUiOnsiYm5wbCI6W3sicGF5bWVudENoYW5uZWxJZCI6ImtvdGFrX2JucGxfY2FyZGxlc3NfKiIsImFtb3VudCI6IjYwIn1dfSwic291cmNlIjoic2VjdXJlLTJmciIsImlhdCI6MTY3NjU0NjI0MCwiZXhwIjoxNjc2NTQ3MTQwfQ.YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0'
+  
+  And header Authorization = jsonwebtoken.token   //write token form json file
   And header TENANT = 'KOTAK_BNPL'
   And header public-key = 'Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy'
   And header User-Agent = 'PostmanRuntime/7.31.1'
@@ -41,7 +55,7 @@ Feature: process payment api testing to check error message validation
   Then status 200
   And match $.result.status == 'failed'
   And match $.result.statusCode == 'PAY_1002'
-  And match $.result.message == 'Request expired.'
+  And match $.result.message == 'Invalid credentials.'
   * print response
   
   

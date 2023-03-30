@@ -1,53 +1,43 @@
 Feature: process payment api testing to check error message validation
 
 
+
   Background:
-    * def jsonwebtoken = call read('token.feature')
-    Then print jsonwebtoken
+    #* def functions = read('jwttoken.js')
+    * def returntoken = 
+  """
+    const jwt = require("jsonwebtoken");
+    const reqBody = {
+    mobileNumber: "+918369221597",
+    deviceId: "123456",
+    };
+    const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+    function generateToken(reqBody, secretKey) {
+    const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+    return token;
+    }
+  """
+    * def returntoken = call returntoken
+    Then print 'returntoken---',returntoken
+
+
+          
     * url 'https://apitest.livquik.com'
     * def requestPayload =
 
-# * def token = 'token.json'
-# * print token
-
-#Examples:
-#| read('classpath:test/' +token) |
-#var token = read('classpath:token.json' );
-#* def token = read('../token.json')
- # Then print "Function name =>" , token()
-
-#* def getRandomValue = function() {return math.floor((10) * math.random());}
- #Then print "Function name =>" , getRandomValue()
-
-  """
-      {
+"""
+{
   "mobileNumber": "+918722000003",
   "deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
- "channel": "app",
-  "merchantId": "uk@wad7Si",
-  "amount": "60",
-  "currency": "INR",
-  "merchantOrderId": "KOTAK-120903534354311",
-  "callbackUrl": "https://localhost:8000/api/processPayment",
-  "emiSubvention": false,
-  "emiTransaction": false,
-   "paymentMode": {
-        "bnpl": [{
-            "paymentChannelId": "kotak_bnpl_cardless_*",
-            "amount":"60"
-        }]
-    },
-    
-  "source": "secure-2fr"
-
-      }
-
-  """
+  "channel": "app",
+}
+"""
   Scenario: Testing a POST api of process payment
-  Given path '/api/v1/bnpl/processPayment'
+  Given url baseurl+'/api/v1/bnpl/processPayment'
   And request requestPayload
   And header Content-Type = 'application/json'
-  And header Authorization = '<token>'
+  
+  And header Authorization = 'jhdjsfvjhdvfdfdsf' //write token form json file
   And header TENANT = 'KOTAK_BNPL'
   And header public-key = 'Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy'
   And header User-Agent = 'PostmanRuntime/7.31.1'
@@ -57,5 +47,6 @@ Feature: process payment api testing to check error message validation
   And match $.result.statusCode == 'PAY_1002'
   And match $.result.message == 'Invalid credentials.'
   * print response
+
   
   

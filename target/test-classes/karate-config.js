@@ -2,8 +2,10 @@ function fn() {
   if (!env) {
     env = 'staging';
   }
-  var config = {
-    // variables & api paths
+  var config = {  
+    env: env,
+    baseurl: 'https://apitest.livquik.com'
+    
   }
   //'karate.env' - Get system property
   var env = karate.env;

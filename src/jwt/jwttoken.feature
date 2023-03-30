@@ -1,8 +1,6 @@
 
-Background:
-* def generateToken =
+* def gettoken = 
 """
-function(generateToken) {
 
 const jwt = require("jsonwebtoken");
 const fs = require('fs');
@@ -26,11 +24,10 @@ function generateToken(reqBody, secretKey) {
 const token = generateToken(reqBody, secretKey);
 try {
   fs.writeFileSync('token.json', JSON.stringify({ token: token })
-);
+  );
   // file written successfully
 } catch (err) {
   console.error(err);
 }
-}
 """
-"""
+  * karate.log(gettoken()
