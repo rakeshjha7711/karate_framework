@@ -5,6 +5,7 @@
   "main": "service.js",
   "scripts": {
     "dev": "nodemon",
+    "test1": "node test.js",
     "test": "NODE_ENV=unittest node_modules/mocha/bin/mocha --reporter mochawesome --exit --reporter-options reportDir=test/mochawesome-report,reportFilename=${npm_package_name},reportTitle=${npm_package_name},reportPageTitle=${npm_package_name},json=false,inline=true,code=false"
   },
   "keywords": [
@@ -21,7 +22,8 @@
     "save": "^2.9.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^7.6.0"
+    "@faker-js/faker": "^7.6.0",
+    "@karatelabs/karate": "^0.2.2"
   },
   "nodemonConfig": {
     "ext": "js, proto",
@@ -34,4 +36,5 @@
     ],
     "delay": "3"
   }
+
 }

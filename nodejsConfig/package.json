@@ -1,0 +1,21 @@
+{
+  "name": "@karatelabs/karate",
+  "version": "0.3.0",
+  "description": "NPM for Karate",
+  "homepage": "https://github.com/karatelabs/karate-npm",
+  "repository": {
+    
+    "url": "https://github.com/karatelabs/karate-npm.git"
+  },
+  "main": "karate.js",
+  "scripts": {
+    "test": "node test.js",
+    "type": "module",
+    "preinstall": "node preinstall.js"
+  },
+  "author": "Peter Thomas",
+  "license": "MIT",
+  "dependencies": {
+    "@jbangdev/jbang": "^0.2.2"
+  }
+}

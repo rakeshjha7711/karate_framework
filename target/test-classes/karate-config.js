@@ -1,10 +1,13 @@
+
+
 function fn() {
   if (!env) {
     env = 'staging';
   }
   var config = {  
     env: env,
-    baseurl: 'https://apitest.livquik.com'
+    baseurl: 'https://apitest.livquik.com',
+    
     
   }
   //'karate.env' - Get system property
@@ -18,4 +21,5 @@ function fn() {
   karate.configure('connectTimeout', 5000);
   karate.configure('readTimeout', 5000);
   return config;
+  
 }

@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,13 +50,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-03-28 04:16:36 pm</div>
+    <div>2023-04-10 11:14:17 am</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:46]"><span>[1:46]</span> <span>Testing a POST api of process payment</span></a>
+          <div class="nav-item passed">
+            <a href="#[1:66]"><span>[1:66]</span> <span>Testing a POST api of process payment</span></a>
           </div>
         </div>
       </div>
@@ -70,29 +70,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:46]">
+          <div class="scenario-heading" id="[1:66]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:46]</span>
+                Scenario: <span>[1:66]</span>
                 <span class="scenario-name">Testing a POST api of process payment</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>53</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>792</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:46]bg">
+            <div class="step-container" id="[1:66]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:46]bg"><div>
+          <div data-parent="[1:66]bg"><div>
   
 
   
@@ -101,11 +101,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>def jsonwebtoken = read(&#39;myproject/token.json&#39;)   //read tone from json file</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsonwebtoken = read(&#39;token.json&#39;)   //read tone from json file</span>
       </div>
     </div>
-    <div class="time-cell failed">53</div>
+    <div class="time-cell passed">54</div>
   </div>
 
    
@@ -114,29 +114,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">16:16:35.930 karate.env system property was: null 
-16:16:36.039 classpath:test/readJSON_copy.feature:5
-* def jsonwebtoken = read(&#39;myproject/token.json&#39;)   //read tone from json file
-js failed:
-&gt;&gt;&gt;&gt;
-01: read(&#39;myproject/token.json&#39;)   //read tone from json file
-&lt;&lt;&lt;&lt;
-org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /home/livquik/Desktop/karate_demo/myproject/target/test-classes/test/myproject/token.json (No such file or directory)
-- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
-- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
-- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
-- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:54)
-- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
-- &lt;js&gt;.:program(Unnamed:1)
-
-classpath:test/readJSON_copy.feature:5
+  <div class="preformatted" data-parent="0.5">11:14:16.212 karate.env system property was: null 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:46]bg"><div>
+          <div data-parent="[1:66]bg"><div>
   
 
   
@@ -145,11 +130,11 @@ classpath:test/readJSON_copy.feature:5
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>print jsonwebtoken.token</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -158,13 +143,14 @@ classpath:test/readJSON_copy.feature:5
 
   
 
-     
+  <div class="preformatted" data-parent="0.6">11:14:16.329 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4MzY5MjIxNTk3IiwiZGV2aWNlSWQiOiIxMjM0NTYiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6ImZ6QU1KclhjciIsImFtb3VudCI6IjEwMDAiLCJjdXJyZW5jeSI6IklOUiIsImlhdCI6MTY4MDAwMjAzNSwiZXhwIjoxNjgwMDAyOTM1fQ.SnAI2h7ZQE7P6LN7Ic27RY_0flrK95y253VZi2yS3QM 
+</div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:46]bg"><div>
+          <div data-parent="[1:66]bg"><div>
   
 
   
@@ -173,11 +159,11 @@ classpath:test/readJSON_copy.feature:5
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>url &#39;https://apitest.livquik.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -192,7 +178,7 @@ classpath:test/readJSON_copy.feature:5
 
 </div>
 </div>
-          <div data-parent="[1:46]bg"><div>
+          <div data-parent="[1:66]bg"><div>
   
 
   
@@ -201,34 +187,35 @@ classpath:test/readJSON_copy.feature:5
     <div class="step-container" id="0.8">
       <div class="step-ref bg-step">8</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def requestPayload =</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
   
   <div class="preformatted" data-parent="0.8">{
-  &quot;mobileNumber&quot;: &quot;+918722000003&quot;,
-  &quot;deviceId&quot;: &quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,
- &quot;channel&quot;: &quot;app&quot;,
-  &quot;merchantId&quot;: &quot;uk@wad7Si&quot;,
-  &quot;amount&quot;: &quot;60&quot;,
-  &quot;currency&quot;: &quot;INR&quot;,
-  &quot;merchantOrderId&quot;: &quot;KOTAK-120903534354311&quot;,
-  &quot;callbackUrl&quot;: &quot;https://localhost:8000/api/processPayment&quot;,
-  &quot;emiSubvention&quot;: false,
-  &quot;emiTransaction&quot;: false,
-   &quot;paymentMode&quot;: {
-  &quot;bnpl&quot;: [{
-      &quot;paymentChannelId&quot;: &quot;kotak_bnpl_cardless_*&quot;,
-      &quot;amount&quot;:&quot;60&quot;
-  }]
+    &quot;mobileNumber&quot;: &quot;+918722000003&quot;,
+    &quot;deviceId&quot;: &quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,
+    &quot;channel&quot;: &quot;app&quot;,
+    &quot;merchantId&quot;: &quot;uk@wad7Si&quot;,
+    &quot;amount&quot;: &quot;60&quot;,
+    &quot;currency&quot;: &quot;INR&quot;,
+    &quot;merchantOrderId&quot;: &quot;KOTAK-120903534354311&quot;,
+    &quot;callbackUrl&quot;: &quot;https://localhost:8000/api/processPayment&quot;,
+    &quot;emiSubvention&quot;: false,
+    &quot;emiTransaction&quot;: false,
+    &quot;paymentMode&quot;: {
+        &quot;bnpl&quot;: [
+            {
+                &quot;paymentChannelId&quot;: &quot;kotak_bnpl_cardless_*&quot;,
+                &quot;amount&quot;: &quot;60&quot;
+            }
+        ]
     },
-    
-  &quot;source&quot;: &quot;secure-2fr&quot;
+    &quot;source&quot;: &quot;secure-2fr&quot;
 }</div>
 
   
@@ -245,14 +232,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.47">
-      <div class="step-ref skipped">47</div>
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url baseurl+&#39;/api/v1/bnpl/processPayment&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -273,14 +260,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.48">
-      <div class="step-ref skipped">48</div>
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request requestPayload</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -301,14 +288,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref skipped">49</div>
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -329,14 +316,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.51">
-      <div class="step-ref skipped">51</div>
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = jsonwebtoken.token   //write token form json file</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -357,14 +344,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.52">
-      <div class="step-ref skipped">52</div>
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header TENANT = &#39;KOTAK_BNPL&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -385,14 +372,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.53">
-      <div class="step-ref skipped">53</div>
+    <div class="step-container" id="0.73">
+      <div class="step-ref passed">73</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header public-key = &#39;Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -413,14 +400,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref skipped">54</div>
+    <div class="step-container" id="0.74">
+      <div class="step-ref passed">74</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header User-Agent = &#39;PostmanRuntime/7.31.1&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -441,14 +428,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.55">
-      <div class="step-ref skipped">55</div>
+    <div class="step-container" id="0.75">
+      <div class="step-ref passed">75</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">690</div>
   </div>
 
    
@@ -457,7 +444,54 @@ classpath:test/readJSON_copy.feature:5
 
   
 
-     
+  <div class="preformatted" data-parent="0.75">11:14:16.716 request:
+1 &gt; POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTE4MzY5MjIxNTk3IiwiZGV2aWNlSWQiOiIxMjM0NTYiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6ImZ6QU1KclhjciIsImFtb3VudCI6IjEwMDAiLCJjdXJyZW5jeSI6IklOUiIsImlhdCI6MTY4MDAwMjAzNSwiZXhwIjoxNjgwMDAyOTM1fQ.SnAI2h7ZQE7P6LN7Ic27RY_0flrK95y253VZi2yS3QM
+1 &gt; TENANT: KOTAK_BNPL
+1 &gt; public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 &gt; User-Agent: PostmanRuntime/7.31.1
+1 &gt; Content-Length: 409
+1 &gt; Host: apitest.livquik.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;mobileNumber&quot;:&quot;+918722000003&quot;,&quot;deviceId&quot;:&quot;9F0D7162-F90E-41B7-8357-88891C33F0ED&quot;,&quot;channel&quot;:&quot;app&quot;,&quot;merchantId&quot;:&quot;uk@wad7Si&quot;,&quot;amount&quot;:&quot;60&quot;,&quot;currency&quot;:&quot;INR&quot;,&quot;merchantOrderId&quot;:&quot;KOTAK-120903534354311&quot;,&quot;callbackUrl&quot;:&quot;https:\/\/localhost:8000\/api\/processPayment&quot;,&quot;emiSubvention&quot;:false,&quot;emiTransaction&quot;:false,&quot;paymentMode&quot;:{&quot;bnpl&quot;:[{&quot;paymentChannelId&quot;:&quot;kotak_bnpl_cardless_*&quot;,&quot;amount&quot;:&quot;60&quot;}]},&quot;source&quot;:&quot;secure-2fr&quot;}
+
+11:14:17.039 response time in milliseconds: 320
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Mon, 10 Apr 2023 05:44:17 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Accept-Encoding
+1 &lt; Vary: Origin
+1 &lt; Content-Security-Policy: default-src &#39;self&#39;;base-uri &#39;self&#39;;font-src &#39;self&#39; https: data:;form-action &#39;self&#39;;frame-ancestors &#39;self&#39;;img-src &#39;self&#39; data:;object-src &#39;none&#39;;script-src &#39;self&#39;;script-src-attr &#39;none&#39;;style-src &#39;self&#39; https: &#39;unsafe-inline&#39;;upgrade-insecure-requests
+1 &lt; Cross-Origin-Embedder-Policy: require-corp
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; X-DNS-Prefetch-Control: off
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Strict-Transport-Security: max-age=432000; includeSubDomains
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; X-XSS-Protection: 0
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; X-Powered-By: Express
+1 &lt; vary: Accept-Encoding
+1 &lt; vary: Origin
+1 &lt; X-Kong-Upstream-Latency: 17
+1 &lt; X-Kong-Proxy-Latency: 1
+1 &lt; Via: kong/2.7.0.0-enterprise-edition
+{&quot;result&quot;:{&quot;status&quot;:&quot;failed&quot;,&quot;statusCode&quot;:&quot;PAY_1002&quot;,&quot;message&quot;:&quot;Invalid credentials.&quot;}}
+
+</div>   
 
   
 
@@ -469,14 +503,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref skipped">56</div>
+    <div class="step-container" id="0.76">
+      <div class="step-ref passed">76</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -497,14 +531,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref skipped">57</div>
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match $.result.status == &#39;failed&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -525,14 +559,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref skipped">58</div>
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match $.result.statusCode == &#39;PAY_1002&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -553,14 +587,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.59">
-      <div class="step-ref skipped">59</div>
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match $.result.message == &#39;Invalid credentials.&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -581,14 +615,14 @@ classpath:test/readJSON_copy.feature:5
   
 
   <div class="step-row">
-    <div class="step-container" id="0.60">
-      <div class="step-ref skipped">60</div>
+    <div class="step-container" id="0.80">
+      <div class="step-ref passed">80</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -597,7 +631,15 @@ classpath:test/readJSON_copy.feature:5
 
   
 
-     
+  <div class="preformatted" data-parent="0.80">11:14:17.068 [print] {
+  &quot;result&quot;: {
+    &quot;status&quot;: &quot;failed&quot;,
+    &quot;statusCode&quot;: &quot;PAY_1002&quot;,
+    &quot;message&quot;: &quot;Invalid credentials.&quot;
+  }
+}
+ 
+</div>   
 
   
 
