@@ -16486,3 +16486,2833 @@ org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
 - <js>.:program(Unnamed:1)
 
 classpath:test/readJSON.feature:7
+16:50:52.149 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:50:54.744 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:50:54.877 [main] ERROR com.intuit.karate - classpath:test/readJSON.feature:7
+* def returntoken =
+"""
+const jwt = require("jsonwebtoken");
+const reqBody = {
+mobileNumber: "+918369221597",
+deviceId: "123456",
+};
+const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+function generateToken(reqBody, secretKey) {
+const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+return token;
+}
+"""
+js failed:
+>>>>
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON.feature:7
+16:53:54.853 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:53:56.052 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:53:56.136 [main] ERROR com.intuit.karate - classpath:test/readJSON.feature:7
+* def returntoken =
+"""
+const jwt = require("jsonwebtoken");
+const reqBody = {
+mobileNumber: "+918369221597",
+deviceId: "123456",
+};
+const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+function generateToken(reqBody, secretKey) {
+const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+return token;
+}
+"""
+js failed:
+>>>>
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON.feature:7
+17:03:40.517 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:03:41.762 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:03:41.849 [main] ERROR com.intuit.karate - classpath:test/readJSON.feature:7
+* def returntoken =
+"""
+const jwt = require("jsonwebtoken");
+const reqBody = {
+mobileNumber: "+918369221597",
+deviceId: "123456",
+};
+const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+function generateToken(reqBody, secretKey) {
+const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+return token;
+}
+"""
+js failed:
+>>>>
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON.feature:7
+17:36:20.350 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:36:21.934 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:36:22.029 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT('your string payload')
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT('your string payload')
+classpath:test/readJSON_copy3.feature:30
+17:49:09.188 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/readJSON_copy3.feature - extraneous input '\n\n      """\n      {\n      "mobileNumber": "+918722000003",\n      "deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",\n      }\n      """' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+17:50:22.990 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:50:24.674 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:50:24.781 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT('token')
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT('token')
+classpath:test/readJSON_copy3.feature:30
+17:54:42.078 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:54:43.296 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:54:43.391 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:44
+And request requestPayload
+js failed:
+>>>>
+01: requestPayload
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "requestPayload" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:44
+17:56:08.782 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:56:10.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:56:10.249 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:5
+* def returntoken =
+"""
+package com.m2pfintech.payatease.gateway.service.m2pacq;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import java.security.Key;
+import java.util.Base64;
+import java.util.Map;
+@Slf4j
+@Component
+public class M2pAcqAuthPayloadGenerator
+{
+@Autowired
+private ObjectMapper objectMapper;
+public String getAuthPayload(String secretKey,Object payload)
+{
+byte[] secretBytes = Base64.getDecoder().decode(secretKey);
+Key hmacKey = Keys.hmacShaKeyFor(secretBytes);
+Map<String, Object> payloadMap = objectMapper.convertValue(payload, Map.class);
+String jwtPayload = Jwts.builder()
+.setClaims(payloadMap)
+.signWith(hmacKey, SignatureAlgorithm.HS256)
+.compact();
+return jwtPayload; } }
+"""
+js failed:
+>>>>
+01: package com.m2pfintech.payatease.gateway.service.m2pacq;
+02: import com.fasterxml.jackson.databind.ObjectMapper;
+03: import io.jsonwebtoken.Jwts;
+04: import io.jsonwebtoken.SignatureAlgorithm;
+05: import io.jsonwebtoken.security.Keys;
+06: import lombok.extern.slf4j.Slf4j;
+07: import org.springframework.beans.factory.annotation.Autowired;
+08: import org.springframework.stereotype.Component;
+09: import java.security.Key;
+10: import java.util.Base64;
+11: import java.util.Map;
+12: @Slf4j
+13: @Component
+14: public class M2pAcqAuthPayloadGenerator
+15: {
+16: @Autowired
+17: private ObjectMapper objectMapper;
+18: public String getAuthPayload(String secretKey,Object payload)
+19: {
+20: byte[] secretBytes = Base64.getDecoder().decode(secretKey);
+21: Key hmacKey = Keys.hmacShaKeyFor(secretBytes);
+22: Map<String, Object> payloadMap = objectMapper.convertValue(payload, Map.class);
+23: String jwtPayload = Jwts.builder()
+24: .setClaims(payloadMap)
+25: .signWith(hmacKey, SignatureAlgorithm.HS256)
+26: .compact();
+27: return jwtPayload; } }
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:8 Expected ; but found com
+package com.m2pfintech.payatease.gateway.service.m2pacq;
+        ^
+Unnamed:2:0 Expected an operand but found import
+import com.fasterxml.jackson.databind.ObjectMapper;
+^
+Unnamed:3:0 Expected an operand but found import
+import io.jsonwebtoken.Jwts;
+^
+Unnamed:4:0 Expected an operand but found import
+import io.jsonwebtoken.SignatureAlgorithm;
+^
+Unnamed:5:0 Expected an operand but found import
+import io.jsonwebtoken.security.Keys;
+^
+Unnamed:6:0 Expected an operand but found import
+import lombok.extern.slf4j.Slf4j;
+^
+Unnamed:7:0 Expected an operand but found import
+import org.springframework.beans.factory.annotation.Autowired;
+^
+Unnamed:8:0 Expected an operand but found import
+import org.springframework.stereotype.Component;
+^
+Unnamed:9:0 Expected an operand but found import
+import java.security.Key;
+^
+Unnamed:10:0 Expected an operand but found import
+import java.util.Base64;
+^
+Unnamed:11:0 Expected an operand but found import
+import java.util.Map;
+^
+Unnamed:12:0 Expected an operand but found error
+@Slf4j
+^
+Unnamed:13:0 Expected an operand but found error
+@Component
+^
+Unnamed:14:7 Expected ; but found class
+public class M2pAcqAuthPayloadGenerator
+       ^
+Unnamed:16:0 Expected an operand but found error
+@Autowired
+^
+Unnamed:17:8 Expected ; but found ObjectMapper
+private ObjectMapper objectMapper;
+        ^
+Unnamed:18:7 Expected ; but found String
+public String getAuthPayload(String secretKey,Object payload)
+       ^
+Unnamed:20:5 Expected an operand but found ]
+byte[] secretBytes = Base64.getDecoder().decode(secretKey);
+     ^
+Unnamed:21:4 Expected ; but found hmacKey
+Key hmacKey = Keys.hmacShaKeyFor(secretBytes);
+    ^
+Unnamed:22:18 Invalid left hand side for assignment
+Map<String, Object> payloadMap = objectMapper.convertValue(payload, Map.class);
+                  ^
+Unnamed:23:7 Expected ; but found jwtPayload
+String jwtPayload = Jwts.builder()
+       ^
+Unnamed:24:0 Expected an operand but found .
+.setClaims(payloadMap)
+^
+Unnamed:25:0 Expected an operand but found .
+.signWith(hmacKey, SignatureAlgorithm.HS256)
+^
+Unnamed:26:0 Expected an operand but found .
+.compact();
+^
+Unnamed:27:0 Invalid return statement
+return jwtPayload; } }
+^
+Unnamed:27:19 Expected eof but found }
+return jwtPayload; } }
+                   ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1251)
+
+classpath:test/readJSON_copy3.feature:5
+17:57:34.806 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:57:36.276 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:57:36.369 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT('your string payload')
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT('your string payload')
+classpath:test/readJSON_copy3.feature:30
+11:23:28.875 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:23:30.468 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:23:30.574 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT('your string payload')
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT('your string payload')
+classpath:test/readJSON_copy3.feature:30
+11:24:05.437 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:24:06.753 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:06.841 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT ('your string payload')
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT ('your string payload')
+classpath:test/readJSON_copy3.feature:30
+11:24:32.273 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:24:34.249 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:24:34.358 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+* print generateJWT = "token"
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print generateJWT = "token"
+classpath:test/readJSON_copy3.feature:30
+11:25:19.534 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:25:20.910 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:25:21.012 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+Then print token
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print token
+classpath:test/readJSON_copy3.feature:30
+11:26:45.696 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:26:47.030 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:26:47.109 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:16
+* def token = get(jwttoken)
+"""
+function(payload) {
+var headerEncoded = encodeBase64(JSON.stringify({alg: "HS256", typ: "JWT"}))
+var payloadEncoded = encodeBase64(payload)
+var toSign = headerEncoded + '.' + payloadEncoded
+var sha256HMAC = Java.type('javax.crypto.Mac').getInstance("HmacSHA256")
+var secretKey = new javax.crypto.spec.SecretKeySpec(apiJwtKey.getBytes("UTF-8"), "HmacSHA256")
+sha256HMAC.init(secretKey)
+var signature = encodeBase64FromBytes(sha256HMAC.doFinal(toSign.getBytes("UTF-8")))
+var token = toSign + '.' + signature
+return token
+}
+"""
+no step-definition method match found for: def token = get(jwttoken)
+classpath:test/readJSON_copy3.feature:16
+12:07:12.270 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:07:13.810 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:07:13.899 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+Then print token
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print token
+classpath:test/readJSON_copy3.feature:30
+16:06:04.287 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:06:05.978 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:06:06.105 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:30
+Then print token
+"""
+{
+"mobileNumber": "+918722000003",
+"deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
+}
+"""
+no step-definition method match found for: print token
+classpath:test/readJSON_copy3.feature:30
+16:07:45.499 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/readJSON_copy3.feature - extraneous input '\n\n      """\n      {\n      "mobileNumber": "+918722000003",\n      "deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",\n      }\n      """' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+16:32:33.908 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:32:36.910 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:32:37.098 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:33
+And request requestPayload
+js failed:
+>>>>
+01: requestPayload
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "requestPayload" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:33
+00:35:18.314 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:35:20.734 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:35:20.840 [main] ERROR com.intuit.karate - classpath:test/readJSON.feature:7
+* def returntoken =
+"""
+const jwt = require("jsonwebtoken");
+const reqBody = {
+mobileNumber: "+918369221597",
+deviceId: "123456",
+};
+const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+function generateToken(reqBody, secretKey) {
+const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+return token;
+}
+"""
+js failed:
+>>>>
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON.feature:7
+00:37:24.491 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:37:26.451 [main] INFO  com.intuit.karate - karate.env system property was: null 
+00:37:26.585 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:33
+And request requestPayload
+js failed:
+>>>>
+01: requestPayload
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "requestPayload" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:33
+12:32:50.243 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:32:51.882 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:32:52.001 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:33
+And request requestPayload
+js failed:
+>>>>
+01: requestPayload
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "requestPayload" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:33
+12:34:20.231 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:34:21.511 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:34:21.616 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:38
+And header Authorization = generateJWT
+js failed:
+>>>>
+01: generateJWT
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "generateJWT" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:38
+12:36:04.901 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:36:06.527 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:36:06.623 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+12:36:07.181 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+12:36:07.645 [main] DEBUG com.intuit.karate - response time in milliseconds: 457
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 13 Apr 2023 07:06:07 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 23
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+12:36:07.713 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:51
+And match $.result.message == 'Request expired.'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Invalid credentials.'
+  'Request expired.'
+
+classpath:test/readJSON_copy3.feature:51
+14:34:34.435 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:34:36.239 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:34:36.365 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+14:34:36.937 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+14:34:37.410 [main] DEBUG com.intuit.karate - response time in milliseconds: 468
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 13 Apr 2023 09:04:37 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 11
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:34:37.438 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:51
+And match $.result.message == 'Request expired.'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Invalid credentials.'
+  'Request expired.'
+
+classpath:test/readJSON_copy3.feature:51
+14:36:46.712 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:36:48.112 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:36:48.222 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+14:36:48.669 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: 
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+14:36:49.028 [main] DEBUG com.intuit.karate - response time in milliseconds: 357
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 13 Apr 2023 09:06:49 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 3
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:36:49.052 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:51
+And match $.result.message == 'Request expired.'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Invalid credentials.'
+  'Request expired.'
+
+classpath:test/readJSON_copy3.feature:51
+14:40:11.495 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:40:12.778 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:40:12.887 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:33
+Then print token1
+js failed:
+>>>>
+01: karate.log('[print]',token1)
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token1" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:33
+14:42:20.281 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:42:21.554 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:42:21.652 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+14:42:22.071 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+14:42:22.434 [main] DEBUG com.intuit.karate - response time in milliseconds: 359
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 13 Apr 2023 09:12:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 9
+1 < X-Kong-Proxy-Latency: 5
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:42:22.484 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:50
+And match $.result.message == 'Request expired.'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Invalid credentials.'
+  'Request expired.'
+
+classpath:test/readJSON_copy3.feature:50
+14:57:28.771 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:57:30.144 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:57:30.254 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+14:57:30.720 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+14:57:31.035 [main] DEBUG com.intuit.karate - response time in milliseconds: 312
+1 < 200
+1 < Server: nginx
+1 < Date: Thu, 13 Apr 2023 09:27:30 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 8
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:57:31.060 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+17:07:04.598 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:07:06.239 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:07:06.350 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+17:07:06.873 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+17:07:07.393 [main] DEBUG com.intuit.karate - response time in milliseconds: 518
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 18 Apr 2023 11:37:07 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 9
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+17:07:07.417 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+12:22:49.668 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:22:51.742 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:22:51.841 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+12:22:52.437 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+12:22:53.563 [main] DEBUG com.intuit.karate - response time in milliseconds: 1117
+1 < 200
+1 < Server: nginx
+1 < Date: Fri, 21 Apr 2023 06:52:54 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 15
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+12:22:53.606 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+16:55:25.838 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:55:28.183 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:55:28.297 [main] ERROR com.intuit.karate - classpath:test/readJSON.feature:7
+* def returntoken =
+"""
+const jwt = require("jsonwebtoken");
+const reqBody = {
+mobileNumber: "+918369221597",
+deviceId: "123456",
+};
+const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+function generateToken(reqBody, secretKey) {
+const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+return token;
+}
+"""
+js failed:
+>>>>
+01: const jwt = require("jsonwebtoken");
+02: const reqBody = {
+03: mobileNumber: "+918369221597",
+04: deviceId: "123456",
+05: };
+06: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+07: function generateToken(reqBody, secretKey) {
+08: const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+09: return token;
+10: }
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON.feature:7
+17:32:46.904 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:32:48.615 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:32:48.732 [main] INFO  com.intuit.karate - [print] com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa 
+17:32:49.318 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@36b310aa
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+17:32:50.322 [main] DEBUG com.intuit.karate - response time in milliseconds: 984
+1 < 200
+1 < Server: nginx
+1 < Date: Fri, 21 Apr 2023 12:02:50 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 14
+1 < X-Kong-Proxy-Latency: 0
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+17:32:50.390 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+18:28:07.528 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:28:09.127 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:28:09.262 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('classpath:generateToken.js')
+js failed:
+>>>>
+01: read('classpath:generateToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: generateToken.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+18:29:44.662 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:29:45.911 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:29:46.046 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:7
+Given def token = generateToken('myusername', 3600000)
+js failed:
+>>>>
+01: generateToken('myusername', 3600000)
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class io.jsonwebtoken.Jwts is not allowed or does not exist.
+- <js>.generateToken(Unnamed:2)
+
+classpath:test/generateToken.feature:7
+18:34:23.279 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:34:24.591 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:34:24.932 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:7
+Given def token = generateToken('myusername', 3600000)
+js failed:
+>>>>
+01: generateToken('myusername', 3600000)
+<<<<
+org.graalvm.polyglot.PolyglotException: javax/xml/bind/DatatypeConverter
+- io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+- io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+- <js>.generateToken(Unnamed:5)
+
+classpath:test/generateToken.feature:7
+18:35:28.903 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:35:30.141 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:35:30.313 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('classpath:generateToken.js')
+js failed:
+>>>>
+01: read('classpath:generateToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: generateToken.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+18:36:05.091 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:36:06.391 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:36:06.706 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:7
+Given def token = generateToken('myusername', 3600000)
+js failed:
+>>>>
+01: generateToken('myusername', 3600000)
+<<<<
+org.graalvm.polyglot.PolyglotException: javax/xml/bind/DatatypeConverter
+- io.jsonwebtoken.impl.Base64Codec.decode(Base64Codec.java:26)
+- io.jsonwebtoken.impl.DefaultJwtBuilder.signWith(DefaultJwtBuilder.java:99)
+- <js>.generateToken(Unnamed:5)
+
+classpath:test/generateToken.feature:7
+18:39:02.157 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:39:03.575 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:39:04.002 [main] INFO  com.intuit.karate - [print] Generated JWT Token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJteXVzZXJuYW1lIiwiZXhwIjoxNjgyMDg2MTQzfQ.tanzf0iwm7az50grB3WPLgaib0w3BvuvvsMxpLEIHns 
+18:39:04.007 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:9
+And set token
+java.lang.NullPointerException
+classpath:test/generateToken.feature:9
+18:42:46.767 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:42:48.046 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:42:48.153 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('jwttoken.js')
+js failed:
+>>>>
+01: read('jwttoken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (
+02: 
+03: const jwt = require("jsonwebtoken");
+04: const reqBody = {
+05:   mobileNumber: "+918369221597",
+06:   deviceId: "123456",
+07: };
+08: 
+09: const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+10: 
+11: function generateToken(reqBody, secretKey) {
+12:   const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
+13:   return token;
+14: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:3:0 Expected an operand but found const
+const jwt = require("jsonwebtoken");
+^
+Unnamed:14:1 Expected ; but found )
+})
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+18:46:30.911 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:46:32.122 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:46:32.214 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('jwttoken.js')
+js failed:
+>>>>
+01: read('jwttoken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (const jwt = require('jsonwebtoken');
+02: 
+03: const payload = {
+04:   userId: 123,
+05:   userName: 'john.doe'
+06: };
+07: 
+08: const secretKey = 'sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT';
+09: 
+10: const token = jwt.sign(payload, secretKey);
+11: 
+12: console.log(token);
+13: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found const
+(const jwt = require('jsonwebtoken');
+ ^
+Unnamed:13:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+18:48:39.609 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:48:40.913 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:48:41.020 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('jwttoken.js')
+js failed:
+>>>>
+01: read('jwttoken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (var jwt = require('jsonwebtoken');
+02: 
+03: var payload = {
+04:   userId: 123,
+05:   userName: 'john.doe'
+06: };
+07: 
+08: var secretKey = 'sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT';
+09: 
+10: var token = jwt.sign(payload, secretKey);
+11: 
+12: console.log(token);
+13: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:1 Expected an operand but found var
+(var jwt = require('jsonwebtoken');
+ ^
+Unnamed:13:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+18:51:16.335 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+18:51:18.043 [main] INFO  com.intuit.karate - karate.env system property was: null 
+18:51:18.130 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateToken = read('jwttoken.js')
+js failed:
+>>>>
+01: read('jwttoken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (let jwt = require('jsonwebtoken');
+02: 
+03: let payload = {
+04:   userId: 123,
+05:   userName: 'john.doe'
+06: };
+07: 
+08: let secretKey = 'sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT';
+09: 
+10: let token = jwt.sign(payload, secretKey);
+11: 
+12: console.log(token);
+13: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:5 Expected ) but found jwt
+(let jwt = require('jsonwebtoken');
+     ^
+Unnamed:13:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:120)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+16:25:51.043 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:25:52.796 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:25:52.889 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def JwtTokenGenerator = Java.type('com.example.JwtTokenGenerator')
+js failed:
+>>>>
+01: Java.type('com.example.JwtTokenGenerator')
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: Access to host class com.example.JwtTokenGenerator is not allowed or does not exist.
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+16:33:41.715 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:33:42.938 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:33:43.112 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:10
+And def jwtToken = JwtTokenGenerator.generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: JwtTokenGenerator.generateJwtToken(payload, secretKey, expirationMillis)
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (generateJwtToken) on test.JwtTokenGenerator failed due to: Cannot convert '{username=john.doe, role=admin}'(language: Java, type: com.intuit.karate.graal.JsMap) to Java type 'java.lang.String': Invalid or lossy primitive coercion.
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:10
+16:36:04.441 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:36:05.761 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:36:05.912 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:12
+And def jwtToken = JwtTokenGenerator.generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: JwtTokenGenerator.generateJwtToken(payload, secretKey, expirationMillis)
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (generateJwtToken) on test.JwtTokenGenerator failed due to: Cannot convert '{username=john.doe, role=admin}'(language: Java, type: com.intuit.karate.graal.JsMap) to Java type 'java.lang.String': Invalid or lossy primitive coercion.
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:12
+16:45:34.825 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/generateToken.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+16:49:09.347 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:49:10.556 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:49:10.715 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:18
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:18
+16:52:17.423 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:52:18.700 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:52:18.834 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:17
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:17
+16:59:41.992 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:59:43.349 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:59:43.511 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:17
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:17
+17:03:23.560 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:03:24.915 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:03:25.062 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:17
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:17
+17:04:51.673 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:04:53.033 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:04:53.180 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:17
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:17
+17:10:58.162 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:10:59.946 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:11:00.091 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+17:16:39.719 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:16:41.087 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:16:41.233 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:24
+And header Authorization = 'Bearer ' + jwtToken
+js failed:
+>>>>
+01: 'Bearer ' + jwtToken
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "jwtToken" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:24
+17:18:28.614 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:18:30.427 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:18:30.589 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+17:19:12.462 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:19:13.731 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:19:13.863 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+17:22:57.392 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+17:22:59.656 [main] INFO  com.intuit.karate - karate.env system property was: null 
+17:22:59.994 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+11:53:15.261 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:53:16.694 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:53:16.800 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('classpath:jwt.js', 'generateToken', 'my-secret-key', 'my-issuer', 'my-subject', 60)
+js failed:
+>>>>
+01: karate.call('classpath:jwt.js', 'generateToken', 'my-secret-key', 'my-issuer', 'my-subject', 60)
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (call) on com.intuit.karate.core.ScenarioBridge@2babf189 failed due to: Arity error - expected: 1-3 actual: 6
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+11:56:51.290 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:56:52.617 [main] INFO  com.intuit.karate - karate.env system property was: null 
+11:56:52.792 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+12:08:04.988 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/generateToken.feature - mismatched input '"' expecting <EOF>
+12:10:52.964 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/generateToken.feature - mismatched input 'm' expecting <EOF>
+12:12:44.385 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:12:45.567 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:12:45.727 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:24
+And def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:24
+12:17:18.799 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:17:20.198 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:17:20.360 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+Given def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+12:19:43.269 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:19:44.595 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:19:44.754 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:23
+Given def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:23
+12:21:14.808 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: test/generateToken.feature - mismatched input '<EOF>' expecting {FEATURE_TAGS, FEATURE}
+12:25:28.889 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:25:30.054 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:25:30.187 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+Given def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+12:27:29.428 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:27:30.793 [main] INFO  com.intuit.karate - karate.env system property was: null 
+12:27:30.939 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+Given def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+15:42:38.513 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:42:40.114 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:42:40.257 [main] ERROR com.intuit.karate - classpath:test/processPayment_error_validation.feature:58
+And header Authorization = jsonwebtoken.token   //write token form json file
+js failed:
+>>>>
+01: jsonwebtoken.token   //write token form json file
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "jsonwebtoken" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/processPayment_error_validation.feature:58
+15:43:29.183 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:43:30.516 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:31.118 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 396
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED","channel":"app","merchantId":"uk@wad7Si","amount":"60","currency":"INR","merchantOrderId":"KOTAK-120903534354311","callbackUrl":"https:\/\/localhost:8000\/api\/processPayment","emiSubvention":false,"emiTransaction":false,"paymentMode":{"bnpl":[{"paymentChannelId":"kotak_bnpl_cardless_*","amount":"60"}]},"source":"secure-2fr"}
+
+15:43:31.493 [main] DEBUG com.intuit.karate - response time in milliseconds: 372
+1 < 200
+1 < Server: nginx
+1 < Date: Mon, 24 Apr 2023 10:13:32 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 11
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+15:43:31.532 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+13:22:42.767 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:22:44.331 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:22:44.507 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:22
+Given def jwtToken = call generateJwtToken(payload, secretKey, expirationMillis)
+js failed:
+>>>>
+01: generateJwtToken(payload,
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:25 Expected an operand but found eof
+generateJwtToken(payload,
+                         ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.call(ScenarioEngine.java:1858)
+
+classpath:test/generateToken.feature:22
+13:27:02.465 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:27:03.830 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:03.947 [main] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'generateJwtToken' with new value: function(payload, secretKey, expirationMillis) {
+// function body
+}
+13:27:03.971 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:29
+And header Authorization = jwtToken
+js failed:
+>>>>
+01: jwtToken
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "jwtToken" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:29
+13:27:40.730 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:27:42.080 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:27:42.691 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Authorization: com.intuit.karate.graal.JsValue$SharableMembersAndInstantiable@4893b344
+1 > TENANT: KOTAK_BNPL
+1 > Content-Type: application/json
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+
+
+13:27:43.358 [main] DEBUG com.intuit.karate - response time in milliseconds: 663
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 25 Apr 2023 07:57:43 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 15
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+13:45:09.186 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:45:10.687 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:45:10.798 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateJwtToken =
+"""
+function generateJwtToken(payload, secret)
+const jwt = require('jsonwebtoken')
+let reqBody = {
+"mobileNumber": "+918448848902",
+"deviceId": "EB57FCDE-097D-4483-8CCF-27649FFC8B2A",
+}
+const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo"
+const token = jwt.sign(reqBody, secret, { expiresIn: 60 * 15 })
+return token;
+}
+"""
+js failed:
+>>>>
+01: (function generateJwtToken(payload, secret)
+02: const jwt = require('jsonwebtoken')
+03: let reqBody = {
+04: "mobileNumber": "+918448848902",
+05: "deviceId": "EB57FCDE-097D-4483-8CCF-27649FFC8B2A",
+06: }
+07: const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo"
+08: const token = jwt.sign(reqBody, secret, { expiresIn: 60 * 15 })
+09: return token;
+10: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:2:0 Expected an operand but found const
+const jwt = require('jsonwebtoken')
+^
+Unnamed:9:0 Invalid return statement
+return token;
+^
+Unnamed:10:0 Expected eof but found }
+})
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1251)
+
+classpath:test/generateToken.feature:4
+13:46:01.746 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:46:03.142 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:46:03.245 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def generateJwtToken =
+"""
+function generateJwtToken(payload, secret){
+const jwt = require('jsonwebtoken')
+let reqBody = {
+"mobileNumber": "+918448848902",
+"deviceId": "EB57FCDE-097D-4483-8CCF-27649FFC8B2A",
+}
+const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo"
+const token = jwt.sign(reqBody, secret, { expiresIn: 60 * 15 })
+return token;
+}
+"""
+js failed:
+>>>>
+01: (function generateJwtToken(payload, secret){
+02: const jwt = require('jsonwebtoken')
+03: let reqBody = {
+04: "mobileNumber": "+918448848902",
+05: "deviceId": "EB57FCDE-097D-4483-8CCF-27649FFC8B2A",
+06: }
+07: const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo"
+08: const token = jwt.sign(reqBody, secret, { expiresIn: 60 * 15 })
+09: return token;
+10: })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:7:6 Variable "secret" has already been declared
+const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo"
+      ^
+Unnamed:8:62 Expected ; but found )
+const token = jwt.sign(reqBody, secret, { expiresIn: 60 * 15 })
+                                                              ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2143)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2062)
+- com.intuit.karate.core.ScenarioEngine.evalAndCastTo(ScenarioEngine.java:1251)
+
+classpath:test/generateToken.feature:4
+13:47:45.949 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:47:47.413 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:47:47.540 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:23
+And header Authorization = jwtToken
+js failed:
+>>>>
+01: jwtToken
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "jwtToken" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:23
+13:54:24.639 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:54:25.872 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:54:25.966 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:23
+And header Authorization = token
+js failed:
+>>>>
+01: token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:23
+13:57:52.331 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:53.609 [main] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:53.707 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:24
+And header Authorization = token
+js failed:
+>>>>
+01: token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:24
+14:01:03.535 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:01:04.966 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:01:05.075 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:24
+And header Authorization = token
+js failed:
+>>>>
+01: token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:24
+14:01:31.569 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:01:32.941 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:01:33.362 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Authorization: tdfyudfuyfuytfuyfuy
+1 > TENANT: KOTAK_BNPL
+1 > Content-Type: application/json
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+
+
+14:01:33.942 [main] DEBUG com.intuit.karate - response time in milliseconds: 577
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 25 Apr 2023 08:31:33 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 10
+1 < X-Kong-Proxy-Latency: 1
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:08:57.343 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:08:59.076 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:08:59.187 [1682411939185] DEBUG com.intuit.karate - command: [generateToken.js], working dir: null
+14:08:59.204 [1682411939185] ERROR com.intuit.karate.shell.Command - command error: [generateToken.js] - Cannot run program "generateToken.js": error=2, No such file or directory
+14:08:59.572 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Authorization: Bearer 
+1 > TENANT: KOTAK_BNPL
+1 > Content-Type: application/json
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+
+
+14:09:00.051 [main] DEBUG com.intuit.karate - response time in milliseconds: 463
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 25 Apr 2023 08:39:00 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 11
+1 < X-Kong-Proxy-Latency: 5
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:13:39.314 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:13:40.696 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:13:40.761 [1682412220760] DEBUG com.intuit.karate - command: [test/generateToken.js], working dir: null
+14:13:40.793 [1682412220760] ERROR com.intuit.karate.shell.Command - command error: [test/generateToken.js] - Cannot run program "test/generateToken.js": error=2, No such file or directory
+14:13:41.178 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Authorization: Bearer 
+1 > TENANT: KOTAK_BNPL
+1 > Content-Type: application/json
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+
+
+14:13:41.543 [main] DEBUG com.intuit.karate - response time in milliseconds: 363
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 25 Apr 2023 08:43:41 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 6
+1 < X-Kong-Proxy-Latency: 5
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:23:15.429 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:23:16.913 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:23:16.981 [1682412796980] DEBUG com.intuit.karate - command: [/myproject/src/test/java/test/generateToken.js], working dir: null
+14:23:16.986 [1682412796980] ERROR com.intuit.karate.shell.Command - command error: [/myproject/src/test/java/test/generateToken.js] - Cannot run program "/myproject/src/test/java/test/generateToken.js": error=2, No such file or directory
+14:23:17.353 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Authorization: 
+1 > TENANT: KOTAK_BNPL
+1 > Content-Type: application/json
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+
+
+14:23:17.833 [main] DEBUG com.intuit.karate - response time in milliseconds: 475
+1 < 200
+1 < Server: nginx
+1 < Date: Tue, 25 Apr 2023 08:53:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 8
+1 < X-Kong-Proxy-Latency: 7
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+14:26:10.192 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:26:11.590 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:26:11.655 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:24
+And header Authorization =
+no step-definition method match found for: header Authorization =
+classpath:test/generateToken_copy.feature:24
+14:30:24.655 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:30:26.109 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:30:26.219 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:24
+* def jwtToken = karate.call('generateJwtToken')
+js failed:
+>>>>
+01: karate.call('generateJwtToken')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /home/livquik/Desktop/karate_API/myproject/target/test-classes/test/generateJwtToken (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:76)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken_copy.feature:24
+14:32:19.030 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:32:20.568 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:32:20.650 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = karate.call('generateJwtToken')
+js failed:
+>>>>
+01: karate.call('generateJwtToken')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /home/livquik/Desktop/karate_API/myproject/target/test-classes/test/generateJwtToken (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:76)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken_copy.feature:23
+14:37:55.764 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:37:57.129 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:37:57.220 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def jwtToken = karate.call('generateJwtToken')
+js failed:
+>>>>
+01: karate.call('generateJwtToken')
+<<<<
+org.graalvm.polyglot.PolyglotException: java.io.FileNotFoundException: /home/livquik/Desktop/karate_API/myproject/target/test-classes/test/generateJwtToken (No such file or directory)
+- com.intuit.karate.resource.FileResource.getStream(FileResource.java:98)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:76)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+14:38:42.873 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:38:44.325 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:38:44.431 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def jwtToken = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.generateJwtToken(Unnamed:2)
+
+classpath:test/generateToken.feature:4
+14:43:56.310 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:43:57.908 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:43:57.986 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:22
+* def jwtToken = karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (call) on com.intuit.karate.core.ScenarioBridge@22590e3e failed due to: no applicable overload found (overloads: [Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String,org.graalvm.polyglot.Value)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String,org.graalvm.polyglot.Value)]], arguments: [classpath:generateJwtToken.js (String), DynamicObject<null>@293d0107 (Nullish), DynamicObject<JSOrdinary>@3491e86e (DefaultLayout)])
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken_copy.feature:22
+14:46:23.049 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:46:24.527 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:46:24.615 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (call) on com.intuit.karate.core.ScenarioBridge@2b329bbd failed due to: no applicable overload found (overloads: [Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String,org.graalvm.polyglot.Value)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String,org.graalvm.polyglot.Value)]], arguments: [classpath:generateJwtToken.js (String), DynamicObject<null>@74cadd41 (Nullish), DynamicObject<JSOrdinary>@53dad875 (DefaultLayout)])
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken_copy.feature:23
+14:47:15.670 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --runtime=node
+14:47:46.014 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': --runtime=node
+14:49:17.605 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:49:19.086 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:49:19.170 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js', null, {engine: 'node'})
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (call) on com.intuit.karate.core.ScenarioBridge@22590e3e failed due to: no applicable overload found (overloads: [Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String,org.graalvm.polyglot.Value)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String,org.graalvm.polyglot.Value)]], arguments: [classpath:generateJwtToken.js (String), DynamicObject<null>@293d0107 (Nullish), DynamicObject<JSOrdinary>@3491e86e (DefaultLayout)])
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken_copy.feature:23
+14:53:09.154 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:53:10.587 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:53:10.658 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('classpath:generateJwtToken.js', null, { engine: 'node' })
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js', null, { engine: 'node' })
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (call) on com.intuit.karate.core.ScenarioBridge@4ca8dbfa failed due to: no applicable overload found (overloads: [Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(java.lang.String,org.graalvm.polyglot.Value)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String)], Method[public java.lang.Object com.intuit.karate.core.ScenarioBridge.call(boolean,java.lang.String,org.graalvm.polyglot.Value)]], arguments: [classpath:generateJwtToken.js (String), DynamicObject<null>@7e3060d8 (Nullish), DynamicObject<JSOrdinary>@58a2b4c (DefaultLayout)])
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+14:53:44.565 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:53:45.996 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:53:46.157 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('classpath:generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: generateJwtToken.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+classpath:test/generateToken.feature:4
+14:54:14.518 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:54:15.950 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:54:16.063 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (function generateJwtToken(payload) {
+02:   const jwt = require('jsonwebtoken')
+03:   const reqBody = {
+04:     mobileNumber: "+918448848902",
+05:     deviceId: "EB57FCDE-097D-4483-8CCF-27649FFC8B2A"
+06:   };
+07:   const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo";
+08:   const token = jwt.sign(reqBody, secret)
+09:   karate.log('Generated token:', token);
+10:   return token;
+11: }
+12: module.exports = { generateJwtToken };)
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found module
+module.exports = { generateJwtToken };)
+^
+Unnamed:12:38 Expected ; but found )
+module.exports = { generateJwtToken };)
+                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+14:57:06.629 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:57:08.125 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:57:08.245 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (function generateJwtToken(payload) {
+02:   const jwt = require('jsonwebtoken')
+03:   const reqBody = {
+04:     mobileNumber: "+918448848902",
+05:     deviceId: "EB57FCDE-097D-4483-8CCF-27649FFC8B2A"
+06:   };
+07:   const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo";
+08:   const token = jwt.sign(reqBody, secret)
+09:   karate.log('Generated token:', token);
+10:   return token;
+11: };
+12: module.exports = { generateJwtToken })
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:11:1 Expected ) but found ;
+};
+ ^
+Unnamed:12:37 Expected ; but found )
+module.exports = { generateJwtToken })
+                                     ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+15:00:52.893 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:00:54.357 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:00:54.471 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (function generateJwtToken(payload) {
+02:   const jwt = require('jsonwebtoken')
+03:   const reqBody = {
+04:     mobileNumber: "+918448848902",
+05:     deviceId: "EB57FCDE-097D-4483-8CCF-27649FFC8B2A"
+06:   };
+07:   const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo";
+08:   const token = jwt.sign(reqBody, secret)
+09:   karate.log('Generated token:', token);
+10:   return token;
+11: }
+12: module.exports = { generateJwtToken };)
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found module
+module.exports = { generateJwtToken };)
+^
+Unnamed:12:38 Expected ; but found )
+module.exports = { generateJwtToken };)
+                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+15:02:08.025 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:02:09.635 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:02:09.770 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (function generateJwtToken(payload) {
+02:   const jwt = require('jsonwebtoken')
+03:   const reqBody = {
+04:     mobileNumber: "+918448848902",
+05:     deviceId: "EB57FCDE-097D-4483-8CCF-27649FFC8B2A"
+06:   };
+07:   const secret = "sk_live_ND4ehnhRk2TRz7MVPbOH4FkCUDy7elv0QP3xUVWo";
+08:   const token = jwt.sign(reqBody, secret)
+09:   karate.log('Generated token:', token);
+10:   return token;
+11: }
+12: module.exports = { generateJwtToken };)
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:12:0 Expected ) but found module
+module.exports = { generateJwtToken };)
+^
+Unnamed:12:38 Expected ; but found )
+module.exports = { generateJwtToken };)
+                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.:program(Unnamed:1)
+
+classpath:test/generateToken.feature:4
+15:10:49.333 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:10:50.774 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:10:50.881 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.generateJwtToken(Unnamed:2)
+
+classpath:test/generateToken.feature:4
+15:15:41.344 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:15:42.823 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:15:43.012 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: node_modules/jsonwebtoken/index.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+classpath:test/generateToken.feature:4
+15:18:31.085 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:18:32.565 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:18:32.694 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (module.exports = {
+02:   decode: require('./decode'),
+03:   verify: require('./verify'),
+04:   sign: require('./sign'),
+05:   JsonWebTokenError: require('./lib/JsonWebTokenError'),
+06:   NotBeforeError: require('./lib/NotBeforeError'),
+07:   TokenExpiredError: require('./lib/TokenExpiredError'),
+08: };
+09: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:8:1 Expected ) but found ;
+};
+ ^
+Unnamed:9:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.generateJwtToken(Unnamed:2)
+
+classpath:test/generateToken.feature:4
+15:39:10.438 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:39:11.826 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:39:11.967 [main] ERROR com.intuit.karate - classpath:test/generateToken.feature:4
+* def token = karate.call('generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (module.exports = {
+02:   decode: require('./decode'),
+03:   verify: require('./verify'),
+04:   sign: require('./sign'),
+05:   JsonWebTokenError: require('./lib/JsonWebTokenError'),
+06:   NotBeforeError: require('./lib/NotBeforeError'),
+07:   TokenExpiredError: require('./lib/TokenExpiredError'),
+08: };
+09: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:8:1 Expected ) but found ;
+};
+ ^
+Unnamed:9:0 Expected ; but found )
+)
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:139)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:135)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1190)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:224)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1192)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+- <js>.generateJwtToken(Unnamed:2)
+
+classpath:test/generateToken.feature:4
+15:41:14.300 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:41:15.814 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:41:15.964 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = karate.call('classpath:generateJwtToken.js')
+js failed:
+>>>>
+01: karate.call('classpath:generateJwtToken.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: not found: generateJwtToken.js
+- com.intuit.karate.resource.ResourceUtils.getResource(ResourceUtils.java:126)
+- com.intuit.karate.core.ScenarioFileReader.toResource(ScenarioFileReader.java:129)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsStream(ScenarioFileReader.java:99)
+- com.intuit.karate.core.ScenarioFileReader.readFileAsString(ScenarioFileReader.java:95)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:58)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:162)
+- com.intuit.karate.core.ScenarioBridge.call(ScenarioBridge.java:149)
+
+classpath:test/generateToken_copy.feature:23
+15:43:57.255 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:43:58.769 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:43:58.861 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:anonymous(Unnamed:7)
+
+classpath:test/generateToken_copy.feature:23
+14:52:58.333 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+14:53:08.445 [main] INFO  com.intuit.karate - karate.env system property was: null 
+14:53:08.985 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:anonymous(Unnamed:7)
+
+classpath:test/generateToken_copy.feature:23
+15:02:38.685 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:02:41.114 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:02:41.266 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:anonymous(Unnamed:7)
+
+classpath:test/generateToken_copy.feature:23
+15:05:37.250 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:05:38.922 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:05:39.111 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "require" is not defined
+- <js>.:anonymous(Unnamed:7)
+
+classpath:test/generateToken_copy.feature:23
+15:07:24.762 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+15:07:26.843 [main] INFO  com.intuit.karate - karate.env system property was: null 
+15:07:27.359 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (setPayload) on io.jsonwebtoken.impl.DefaultJwtBuilder@2b289ac9 failed due to: Cannot convert '[object Object]'(language: JavaScript, type: Object) to Java type 'java.lang.String': Invalid or lossy primitive coercion.
+- <js>.:anonymous(Unnamed:8)
+
+classpath:test/generateToken_copy.feature:23
+16:23:34.429 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:23:36.589 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:23:36.997 [main] ERROR com.intuit.karate - classpath:test/generateToken_copy.feature:23
+* def jwtToken = generateJwtToken()
+js failed:
+>>>>
+01: generateJwtToken()
+<<<<
+org.graalvm.polyglot.PolyglotException: TypeError: invokeMember (setPayload) on io.jsonwebtoken.impl.DefaultJwtBuilder@2b289ac9 failed due to: Cannot convert '[object Object]'(language: JavaScript, type: Object) to Java type 'java.lang.String': Invalid or lossy primitive coercion.
+- <js>.:anonymous(Unnamed:8)
+
+classpath:test/generateToken_copy.feature:23
+16:24:24.814 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:24:26.136 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:24:26.287 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:20
+And header Authorization = token
+js failed:
+>>>>
+01: token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:test/readJSON_copy3.feature:20
+16:24:51.779 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:24:53.087 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:24:53.591 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: ytwuiergyqwukrgfkwuegruwegyruiwer
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+16:24:54.543 [main] DEBUG com.intuit.karate - response time in milliseconds: 938
+1 < 200
+1 < Server: nginx
+1 < Date: Fri, 28 Apr 2023 10:54:54 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 33
+1 < X-Kong-Proxy-Latency: 0
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+16:24:54.618 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+16:29:37.335 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:29:38.685 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:29:39.191 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: ytwuiergyqwukrgfkwuegruwegyruiwer
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+16:29:39.574 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 200
+1 < Server: nginx
+1 < Date: Fri, 28 Apr 2023 10:59:39 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 7
+1 < X-Kong-Proxy-Latency: 0
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+16:29:39.618 [main] INFO  com.intuit.karate - [print] {
+  "result": {
+    "status": "failed",
+    "statusCode": "PAY_1002",
+    "message": "Invalid credentials."
+  }
+}
+ 
+16:30:19.797 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:30:21.220 [main] INFO  com.intuit.karate - karate.env system property was: null 
+16:30:21.722 [main] DEBUG com.intuit.karate - request:
+1 > POST https://apitest.livquik.com/api/v1/bnpl/processPayment
+1 > Content-Type: application/json; charset=UTF-8
+1 > Authorization: ytwuiergyqwukrgfkwuegruwegyruiwer
+1 > TENANT: KOTAK_BNPL
+1 > public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+1 > User-Agent: PostmanRuntime/7.31.1
+1 > Content-Length: 82
+1 > Host: apitest.livquik.com
+1 > Connection: Keep-Alive
+1 > Accept-Encoding: gzip,deflate
+{"mobileNumber":"+918722000003","deviceId":"9F0D7162-F90E-41B7-8357-88891C33F0ED"}
+
+16:30:22.105 [main] DEBUG com.intuit.karate - response time in milliseconds: 379
+1 < 200
+1 < Server: nginx
+1 < Date: Fri, 28 Apr 2023 11:00:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Vary: Accept-Encoding
+1 < Vary: Origin
+1 < Content-Security-Policy: default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Cross-Origin-Embedder-Policy: require-corp
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < X-DNS-Prefetch-Control: off
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Frame-Options: SAMEORIGIN
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Strict-Transport-Security: max-age=432000; includeSubDomains
+1 < X-Download-Options: noopen
+1 < X-Content-Type-Options: nosniff
+1 < X-Content-Type-Options: nosniff
+1 < Origin-Agent-Cluster: ?1
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < Referrer-Policy: no-referrer
+1 < X-XSS-Protection: 0
+1 < X-XSS-Protection: 1; mode=block
+1 < X-Powered-By: Express
+1 < vary: Accept-Encoding
+1 < vary: Origin
+1 < X-Kong-Upstream-Latency: 9
+1 < X-Kong-Proxy-Latency: 2
+1 < Via: kong/2.7.0.0-enterprise-edition
+{"result":{"status":"failed","statusCode":"PAY_1002","message":"Invalid credentials."}}
+
+16:30:22.126 [main] ERROR com.intuit.karate - classpath:test/readJSON_copy3.feature:29
+And match $.result.message == 'Invalid'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Invalid credentials.'
+  'Invalid'
+
+classpath:test/readJSON_copy3.feature:29

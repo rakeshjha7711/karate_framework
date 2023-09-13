@@ -1,0 +1,28 @@
+# Use a base image with Java and any other dependencies you need
+FROM openjdk:11
+
+# Set the working directory
+WORKDIR /karate
+
+# Copy your Karate project into the container
+COPY . .
+
+# Install any additional dependencies or configurations needed for your tests
+
+# Install Maven (if required)
+# RUN apt-get update && apt-get install -y maven
+
+# Build your Karate project (if using Maven)
+# RUN mvn clean install
+
+# Expose any ports your application may need (optional)
+# EXPOSE 8080
+
+# Set environment variables (optional)
+# ENV JAVA_OPTS="-Xmx256m"
+
+# Define the entry point for running your tests
+CMD ["java", "-jar", "karate.jar", "test"]
+
+# Specify the location of your Karate JAR file
+ADD https://dl.bintray.com/ptrthomas/karate/karate-0.10.2.jar /karate/karate.jar

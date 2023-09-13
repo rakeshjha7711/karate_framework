@@ -6,7 +6,7 @@ class RunnerTest {
 
     @Karate.Test
     Karate process_payment() {
-        return Karate.run("readJSON").relativeTo(getClass());
+        return Karate.run("readJSON_copy3").relativeTo(getClass());
     }
 
 

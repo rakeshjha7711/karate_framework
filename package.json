@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "test1": "node test.js",
+    
     "test": "NODE_ENV=unittest node_modules/mocha/bin/mocha --reporter mochawesome --exit --reporter-options reportDir=test/mochawesome-report,reportFilename=${npm_package_name},reportTitle=${npm_package_name},reportPageTitle=${npm_package_name},json=false,inline=true,code=false"
   },
   "keywords": [

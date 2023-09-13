@@ -1,1 +1,2 @@
-test/RunnerTest.class
+test/Autowired.class
+test/ComponentScan.class
