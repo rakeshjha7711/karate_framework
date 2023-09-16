@@ -19316,3 +19316,913 @@ match failed: EQUALS
   'Invalid'
 
 classpath:test/readJSON_copy3.feature:29
+16:38:46.819 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': classpath:getAPI.feature
+16:39:12.694 [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': classpath:getAPI.feature
+15:17:57.636 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:17:59.312 [main] DEBUG com.intuit.karate - response time in milliseconds: 1667
+1 < 200
+1 < Date: Fri, 15 Sep 2023 09:47:54 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 15:47:59 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:17:59.394 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:9
+Then status success
+no step-definition method match found for: status success
+classpath:api/getapi.feature:9
+15:24:31.905 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:24:33.568 [main] DEBUG com.intuit.karate - response time in milliseconds: 1653
+1 < 200
+1 < Date: Fri, 15 Sep 2023 09:54:28 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 15:54:33 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:24:33.696 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:10
+And match response == { "employee_name": "Tiger Nixon" }
+match failed: EQUALS
+  $ | not equal | actual has 2 more key(s) than expected - {"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."} (MAP:MAP)
+  {"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+  {"employee_name":"Tiger Nixon"}
+
+
+classpath:api/getapi.feature:10
+15:26:41.331 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:26:42.717 [main] DEBUG com.intuit.karate - response time in milliseconds: 1377
+1 < 200
+1 < Date: Fri, 15 Sep 2023 09:56:37 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 15:56:42 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:27:45.434 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:27:46.671 [main] DEBUG com.intuit.karate - response time in milliseconds: 1227
+1 < 200
+1 < Date: Fri, 15 Sep 2023 09:57:41 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 15:57:46 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:27:46.782 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:10
+And match response.data[1].employee_name == 'Tiger Nixon'
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  'Garrett Winters'
+  'Tiger Nixon'
+
+classpath:api/getapi.feature:10
+15:29:37.390 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:29:38.854 [main] DEBUG com.intuit.karate - response time in milliseconds: 1454
+1 < 200
+1 < Date: Fri, 15 Sep 2023 09:59:33 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 15:59:38 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:32:49.784 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:32:52.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 2695
+1 < 200
+1 < Date: Fri, 15 Sep 2023 10:02:47 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 16:02:51 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:32:52.706 [main] INFO  com.intuit.karate - [print] Employee Name: Tiger Nixon 
+15:32:52.713 [main] INFO  com.intuit.karate - [print] Employee Name: Garrett Winters 
+15:32:52.716 [main] INFO  com.intuit.karate - [print] Employee Name: Ashton Cox 
+15:36:23.166 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:36:25.281 [main] DEBUG com.intuit.karate - response time in milliseconds: 2103
+1 < 200
+1 < Date: Fri, 15 Sep 2023 10:06:20 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 16:06:25 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:36:25.451 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:10
+And match response.data[0] == { employee_name: '#string', employee_salary: '#string', employee_age: '#string' }
+match failed: EQUALS
+  $ | not equal | actual has 2 more key(s) than expected - {"id":1,"profile_image":""} (MAP:MAP)
+  {"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""}
+  {"employee_name":"#string","employee_salary":"#string","employee_age":"#string"}
+
+
+classpath:api/getapi.feature:10
+15:37:06.556 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:37:08.095 [main] DEBUG com.intuit.karate - response time in milliseconds: 1526
+1 < 429
+1 < Date: Fri, 15 Sep 2023 10:07:03 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: text/html; charset=UTF-8
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 57
+1 < retry-after: 18
+1 < x-ratelimit-reset: 1694772445
+1 < Cache-Control: no-cache, private
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+
+15:37:08.112 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:9
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 1526, url: https://dummy.restapiexample.com/api/v1/employees, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+classpath:api/getapi.feature:9
+15:38:01.445 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:02.868 [main] DEBUG com.intuit.karate - response time in milliseconds: 1414
+1 < 200
+1 < Date: Fri, 15 Sep 2023 10:07:57 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 16:08:02 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+15:38:02.975 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:14
+And match response.data[0] == { employee_name: '#string' }
+match failed: EQUALS
+  $ | not equal | actual has 4 more key(s) than expected - {"id":1,"employee_salary":320800,"employee_age":61,"profile_image":""} (MAP:MAP)
+  {"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""}
+  {"employee_name":"#string"}
+
+
+classpath:api/getapi.feature:14
+15:38:26.971 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+15:38:28.657 [main] DEBUG com.intuit.karate - response time in milliseconds: 1677
+1 < 429
+1 < Date: Fri, 15 Sep 2023 10:08:23 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: text/html; charset=UTF-8
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 57
+1 < retry-after: 34
+1 < x-ratelimit-reset: 1694772542
+1 < Cache-Control: no-cache, private
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+
+15:38:28.682 [main] ERROR com.intuit.karate - classpath:api/getapi.feature:9
+Then status 200
+status code was: 429, expected: 200, response time in milliseconds: 1677, url: https://dummy.restapiexample.com/api/v1/employees, response: 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Too Many Requests</title>
+
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-center position-ref full-height">
+            <div class="code">
+                429            </div>
+
+            <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+        </div>
+    </body>
+</html>
+
+classpath:api/getapi.feature:9
+16:01:51.245 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:01:52.679 [main] DEBUG com.intuit.karate - response time in milliseconds: 1426
+1 < 200
+1 < Date: Fri, 15 Sep 2023 10:31:47 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 16:31:52 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+16:01:53.183 [main] INFO  com.intuit.karate - [print] Employee Name: Tiger Nixon 
+16:01:53.191 [main] INFO  com.intuit.karate - [print] Employee Name: Garrett Winters 
+16:01:53.194 [main] INFO  com.intuit.karate - [print] Employee Name: Ashton Cox 
+16:07:58.198 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:07:59.994 [main] DEBUG com.intuit.karate - response time in milliseconds: 1784
+1 < 200
+1 < Date: Fri, 15 Sep 2023 10:37:54 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Fri, 15 Sep 2023 16:37:59 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+16:08:00.526 [main] INFO  com.intuit.karate - [print] Employee Name: Tiger Nixon 
+16:08:00.544 [main] INFO  com.intuit.karate - [print] Employee Name: Garrett Winters 
+16:08:00.546 [main] INFO  com.intuit.karate - [print] Employee Name: Ashton Cox 
+16:08:59.128 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:08:59.890 [main] DEBUG com.intuit.karate - response time in milliseconds: 754
+1 < 201
+1 < Date: Fri, 15 Sep 2023 10:38:59 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-lN4Dmxoon2ZZNSbBAvuZNCrheFo"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UCm7W6lykENt%2Fna4juUDswNNSVe3XLgIiJqP353ER9MitFoooh1nyIggr%2FpvOi40hfSjBNdzMQTg6fC6LsQuvER50t%2F3XlGJmP1gpPhfAeq5i18XJ1UtBpogSQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 80703e45cde61bd6-BOM
+{"name":"morpheus","job":"leader","id":"439","createdAt":"2023-09-15T10:38:59.753Z"}
+
+16:08:59.946 [main] ERROR com.intuit.karate - classpath:api/postapi.feature:11
+And match response == { id: '#number', name: 'morpheus', job: 'leader' }
+match failed: EQUALS
+  $ | not equal | actual has 1 more key(s) than expected - {"createdAt":"2023-09-15T10:38:59.753Z"} (MAP:MAP)
+  {"name":"morpheus","job":"leader","id":"439","createdAt":"2023-09-15T10:38:59.753Z"}
+  {"name":"morpheus","job":"leader","id":"#number"}
+
+
+classpath:api/postapi.feature:11
+16:11:28.276 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input 'n' expecting <EOF>
+16:11:48.220 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input 'n' expecting <EOF>
+16:12:13.385 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input 'n' expecting <EOF>
+16:13:23.248 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:15:15.068 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:15:34.486 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:16:37.733 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:18:24.459 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:18:50.200 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:18:50.831 [main] DEBUG com.intuit.karate - response time in milliseconds: 621
+1 < 201
+1 < Date: Fri, 15 Sep 2023 10:48:50 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-L5hVYIIzuD0EEpwCGHGQnpsI1lU"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=CtveA24G4G%2F0dQJN4K%2BdDWRplfHVXPhdoCZ5s8YqPfHNiAGmeyhtwzjPh8ivwqpnGZLf2bfYzjXuJL6SdlL8ZaoEqdHpOSbh2aAvtZN4Y8I3bvlPkztzwq5zcQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 80704cb4085c47bc-BOM
+{"name":"morpheus","job":"leader","id":"633","createdAt":"2023-09-15T10:48:50.767Z"}
+
+16:20:05.779 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:21:19.833 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:22:22.201 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:23:43.382 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:26:31.071 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:26:31.734 [main] DEBUG com.intuit.karate - response time in milliseconds: 654
+1 < 201
+1 < Date: Fri, 15 Sep 2023 10:56:31 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-6DPTuk0K8zdpAOI6ovGiQh2Hcb4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hlPky%2BgjXHDc6Q3jSLDH2j89HoP%2Fs4HVQ2DEPwsYDDTUtV75ysOZpRRQojwSGkoNxsXaz%2BWZrMrR5ICzLwj4Um3ugDtUk5tVvOHI5ct4sLryL4IbYkc511WbFw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 807057f458b846f8-BOM
+{"name":"morpheus","job":"leader","id":"109","createdAt":"2023-09-15T10:56:31.615Z"}
+
+16:28:37.990 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/postapi.feature - mismatched input '"' expecting <EOF>
+16:34:26.248 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/api.feature - mismatched input '"' expecting <EOF>
+16:38:14.462 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 289 milliseconds for url: /https:/api.example.com/api/get_endpoint/api/v1/employees
+16:38:14.465 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:8
+When method GET
+http call failed after 289 milliseconds for url: /https:/api.example.com/api/get_endpoint/api/v1/employees
+classpath:api/apitest.feature:8
+16:38:14.651 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 9 milliseconds for url: /https:/reqres.in/api/users
+16:38:14.651 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:25
+When method POST
+http call failed after 9 milliseconds for url: /https:/reqres.in/api/users
+classpath:api/apitest.feature:25
+16:41:16.225 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 255 milliseconds for url: /https:/dummy.restapiexample.com/api/v1/employees
+16:41:16.229 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:8
+When method GET
+http call failed after 255 milliseconds for url: /https:/dummy.restapiexample.com/api/v1/employees
+classpath:api/apitest.feature:8
+16:41:16.369 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 7 milliseconds for url: /https:/reqres.in/api/users
+16:41:16.369 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:25
+When method POST
+http call failed after 7 milliseconds for url: /https:/reqres.in/api/users
+classpath:api/apitest.feature:25
+16:42:45.098 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 241 milliseconds for url: /https:/dummy.restapiexample.com/api/v1/employees
+16:42:45.104 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:8
+When method GET
+http call failed after 241 milliseconds for url: /https:/dummy.restapiexample.com/api/v1/employees
+classpath:api/apitest.feature:8
+16:42:45.258 [main] ERROR com.intuit.karate - org.apache.http.ProtocolException: Target host is not specified, http call failed after 8 milliseconds for url: /https:/reqres.in/api/users
+16:42:45.258 [main] ERROR com.intuit.karate - classpath:api/apitest.feature:25
+When method POST
+http call failed after 8 milliseconds for url: /https:/reqres.in/api/users
+classpath:api/apitest.feature:25
+16:44:27.023 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:44:28.554 [main] DEBUG com.intuit.karate - response time in milliseconds: 1521
+1 < 200
+1 < Date: Sat, 16 Sep 2023 11:14:23 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Sat, 16 Sep 2023 17:14:28 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+16:44:28.828 [main] INFO  com.intuit.karate - [print] Employee Name: Tiger Nixon 
+16:44:28.852 [main] INFO  com.intuit.karate - [print] Employee Name: Garrett Winters 
+16:44:28.856 [main] INFO  com.intuit.karate - [print] Employee Name: Ashton Cox 
+16:44:28.952 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:44:29.356 [main] DEBUG com.intuit.karate - response time in milliseconds: 403
+1 < 201
+1 < Date: Sat, 16 Sep 2023 11:14:29 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-8w72TYFcYQj6+0mpci391GSqpjc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2Bo%2BRNyrftDz2xs7E%2FVJUBrZSxRe1W3ouPtu7YGK6Y0ebznyvtOmaZ0SXlA7urO9bFgBnjAKUgcqFEe4Iw%2BsSyC8Vq0s6MY49bI4%2FOSWojX6uebwLDuKmg5D%2F8w%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8078afa3ed3341c7-BOM
+{"name":"morpheus","job":"leader","id":"173","createdAt":"2023-09-16T11:14:29.311Z"}
+
+16:49:27.618 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/apitest.feature - mismatched input '"' expecting <EOF>
+16:49:51.090 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: api/apitest.feature - no viable alternative at input '\n  @skipScenario\n    Given '
+16:51:05.191 [main] DEBUG com.intuit.karate - request:
+1 > GET https://dummy.restapiexample.com/api/v1/employees
+1 > Host: dummy.restapiexample.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+
+
+16:51:07.331 [main] DEBUG com.intuit.karate - response time in milliseconds: 2129
+1 < 200
+1 < Date: Sat, 16 Sep 2023 11:21:02 GMT
+1 < Server: nginx/1.21.6
+1 < Content-Type: application/json
+1 < Cache-Control: no-cache, private
+1 < Cache-Control: max-age=21600
+1 < X-RateLimit-Limit: 60
+1 < X-RateLimit-Remaining: 58
+1 < Expires: Sat, 16 Sep 2023 17:21:07 GMT
+1 < Vary: Accept-Encoding
+1 < host-header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+1 < X-Endurance-Cache-Level: 2
+1 < X-nginx-cache: WordPress
+1 < X-Server-Cache: true
+1 < X-Proxy-Cache: MISS
+{"status":"success","data":[{"id":1,"employee_name":"Tiger Nixon","employee_salary":320800,"employee_age":61,"profile_image":""},{"id":2,"employee_name":"Garrett Winters","employee_salary":170750,"employee_age":63,"profile_image":""},{"id":3,"employee_name":"Ashton Cox","employee_salary":86000,"employee_age":66,"profile_image":""},{"id":4,"employee_name":"Cedric Kelly","employee_salary":433060,"employee_age":22,"profile_image":""},{"id":5,"employee_name":"Airi Satou","employee_salary":162700,"employee_age":33,"profile_image":""},{"id":6,"employee_name":"Brielle Williamson","employee_salary":372000,"employee_age":61,"profile_image":""},{"id":7,"employee_name":"Herrod Chandler","employee_salary":137500,"employee_age":59,"profile_image":""},{"id":8,"employee_name":"Rhona Davidson","employee_salary":327900,"employee_age":55,"profile_image":""},{"id":9,"employee_name":"Colleen Hurst","employee_salary":205500,"employee_age":39,"profile_image":""},{"id":10,"employee_name":"Sonya Frost","employee_salary":103600,"employee_age":23,"profile_image":""},{"id":11,"employee_name":"Jena Gaines","employee_salary":90560,"employee_age":30,"profile_image":""},{"id":12,"employee_name":"Quinn Flynn","employee_salary":342000,"employee_age":22,"profile_image":""},{"id":13,"employee_name":"Charde Marshall","employee_salary":470600,"employee_age":36,"profile_image":""},{"id":14,"employee_name":"Haley Kennedy","employee_salary":313500,"employee_age":43,"profile_image":""},{"id":15,"employee_name":"Tatyana Fitzpatrick","employee_salary":385750,"employee_age":19,"profile_image":""},{"id":16,"employee_name":"Michael Silva","employee_salary":198500,"employee_age":66,"profile_image":""},{"id":17,"employee_name":"Paul Byrd","employee_salary":725000,"employee_age":64,"profile_image":""},{"id":18,"employee_name":"Gloria Little","employee_salary":237500,"employee_age":59,"profile_image":""},{"id":19,"employee_name":"Bradley Greer","employee_salary":132000,"employee_age":41,"profile_image":""},{"id":20,"employee_name":"Dai Rios","employee_salary":217500,"employee_age":35,"profile_image":""},{"id":21,"employee_name":"Jenette Caldwell","employee_salary":345000,"employee_age":30,"profile_image":""},{"id":22,"employee_name":"Yuri Berry","employee_salary":675000,"employee_age":40,"profile_image":""},{"id":23,"employee_name":"Caesar Vance","employee_salary":106450,"employee_age":21,"profile_image":""},{"id":24,"employee_name":"Doris Wilder","employee_salary":85600,"employee_age":23,"profile_image":""}],"message":"Successfully! All records has been fetched."}
+
+16:51:07.564 [main] INFO  com.intuit.karate - [print] Employee Name: Tiger Nixon 
+16:51:07.572 [main] INFO  com.intuit.karate - [print] Employee Name: Garrett Winters 
+16:51:07.576 [main] INFO  com.intuit.karate - [print] Employee Name: Ashton Cox 
+16:51:07.701 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:51:08.137 [main] DEBUG com.intuit.karate - response time in milliseconds: 434
+1 < 201
+1 < Date: Sat, 16 Sep 2023 11:21:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-husgWqA+Q754rJReXG8cwr6OKkI"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=usFwR7vfAUxpQV0Ktod9lY%2FT5YSCY2K1W5z6YXwIfDKSjmojttyKDSUcJfQUWSSPTEKTwGZKP1wAKtR7hz9Vyj36fpf8q2ZT70SJje1tuCi8MK3FVTBUqVtkYg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8078b95feb324226-BOM
+{"name":"morpheus","job":"leader","id":"295","createdAt":"2023-09-16T11:21:08.027Z"}
+
+16:51:08.196 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:51:08.750 [main] DEBUG com.intuit.karate - response time in milliseconds: 541
+1 < 201
+1 < Date: Sat, 16 Sep 2023 11:21:08 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 83
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"53-rt3EaJIvO3p0A0xxT7GUb5KqGmE"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xShJN174KFA07m1xOSORTUDJHD2rca%2BKhGtaG4cbPQ3xNvFFuA0T6nEb6pVQUlECBqWs6JzBmTXlv0NYgoI0n6Qh1IsZljwcDG%2FfasOO6yKCHqWAMD20u5o63A%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8078b962fc363a2d-BOM
+{"name":"morpheus","job":"leader","id":"24","createdAt":"2023-09-16T11:21:08.514Z"}
+
+16:51:08.805 [main] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.19)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+16:51:09.184 [main] DEBUG com.intuit.karate - response time in milliseconds: 378
+1 < 201
+1 < Date: Sat, 16 Sep 2023 11:21:09 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-GaJZHQ3DRg5bXnROYdZ4ZfFrhwc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6IgtNDF7e3YZicUFEyBywkLt4jNSDcIOJcLjhKWyKfIHeKk4k7aR5iXMr2eZElTLcbnAd0BvVgga0cEyaGVUM%2BUS%2F43%2Fchs5SeLI4sl96WL9fsz79UhNBLYDKw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 8078b966acc28584-BOM
+{"name":"morpheus","job":"leader","id":"945","createdAt":"2023-09-16T11:21:09.109Z"}
+

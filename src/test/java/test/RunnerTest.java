@@ -5,8 +5,8 @@ import com.intuit.karate.junit5.Karate;
 class RunnerTest {
 
     @Karate.Test
-    Karate process_payment() {
-        return Karate.run("readJSON_copy3").relativeTo(getClass());
+    Karate getAPI() {
+        return Karate.run("classpath:/api/apitest.feature").relativeTo(getClass());
     }
 
 
