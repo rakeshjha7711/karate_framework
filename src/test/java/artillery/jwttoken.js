@@ -2,15 +2,11 @@ const jwt = require("jsonwebtoken");
 const fs = require('fs');
 
 const reqBody = {
-  mobileNumber: "+918369221597",
+  mobileNumber: "+917715000178",
   deviceId: "123456",
-  channel: "app",
-  merchantId: "fzAMJrXcr",
-  amount: "1000",
-  currency: "INR"
 };
 
-const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+const secretKey = "{{secret-key}}";
 
 function generateToken(reqBody, secretKey) {
   const token = jwt.sign(reqBody, secretKey,
