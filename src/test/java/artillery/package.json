@@ -23,7 +23,7 @@
   "devDependencies": {
     "@faker-js/faker": "^7.6.0"
   },
-  "nodemonConfig": {
+  "test": {
     "ext": "js, proto",
     "ignore": [
       "*test.js",
