@@ -1,5 +1,5 @@
 config:
-  target: "https://opscheckertest.livquik.com/signin"
+  target: "{{url}}"
   phases:
     - duration: 60
       arrivalRate: 20
