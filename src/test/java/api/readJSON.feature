@@ -8,10 +8,10 @@ Feature: process payment api testing to check error message validation
       """
       const jwt = require("jsonwebtoken");
       const reqBody = {
-      mobileNumber: "+918369221597",
+      mobileNumber: "+917715000178",
       deviceId: "123456",
       };
-      const secretKey = "sk_live_1IQbrlbJbsUbwECZSIesC94A6JlY2fbTnlFJu7yT";
+      const secretKey = "{{secret-key}}";
       function generateToken(reqBody, secretKey) {
       const token = jwt.sign(reqBody, secretKey, { expiresIn: 60 * 15 });
       return token;
@@ -24,7 +24,7 @@ Feature: process payment api testing to check error message validation
 
       """
       {
-      "mobileNumber": "+918722000003",
+      "mobileNumber": "+917715000178",
       "deviceId": "9F0D7162-F90E-41B7-8357-88891C33F0ED",
       "channel": "app",
       }
@@ -36,7 +36,7 @@ Feature: process payment api testing to check error message validation
 
     And header Authorization = returntoken //write token form json file
     And header TENANT = 'KOTAK_BNPL'
-    And header public-key = 'Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy'
+    And header public-key = '{{public-key}}'
     And header User-Agent = 'PostmanRuntime/7.31.1'
     When method POST
     Then status 200
