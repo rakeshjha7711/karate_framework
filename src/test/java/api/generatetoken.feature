@@ -24,10 +24,10 @@ Feature: process payment api testing to check error message validation
 
     And header Authorization = jwtToken
 
-    Given url 'https://apitest.livquik.com/api/v1/bnpl/processPayment'
+    Given url '{{url}}'
     And header TENANT = 'KOTAK_BNPL'
     And header Content-Type = 'application/json'
-    And header public-key = 'Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy'
+    And header public-key = 'Bearer {{ssh-key}}'
     And header User-Agent = 'PostmanRuntime/7.31.1'
     When method POST
     Then status 200
