@@ -6,7 +6,7 @@ config:
       # p95 of response time must be <100:
       - "https.response_time.p95": 100
     maxErrorRate: 1  #will make Artillery exit with a non-zero exit code if the total error rate exceeded 1%
-  target: 'https://apitest.livquik.com'
+  target: '{{url}}'
   phases:
     - duration: 60
       arrivalRate: 5   #generates 5 virtual users every second for 1 minutes
@@ -16,8 +16,8 @@ config:
       x-breeze: true
       Content-Type: "application/json"
       Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9YJVpqqoXhNK6qvn5RQbJE-GX02Zve7vcc9FUKqc0_W0"
-      TENANT: "KOTAK_BNPL"
-      public-key: "Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy"
+      TENANT: "{{}}"
+      public-key: "Bearer {{key}}"
       User-Agent: "PostmanRuntime/7.31.1"
 scenarios:
   - name: Customers positive scenario
@@ -26,16 +26,16 @@ scenarios:
       - function:
           - generateFakeData
       - post:
-          url: /api/v1/bnpl/processPayment
+          url: {{url}}
           json:
-             mobileNumber: "9656454343"
+             mobileNumber: "7715000178"
              deviceId: "GFHGAFD6765757DFS"
              channel: "app"
              merchantId: "uk@wad7Si"
              amount: 1
              currency: "INR"
              merchantOrderId: 'JHGF7576575'
-             callbackUrl: "https://localhost:8000/api/processPayment"
+             callbackUrl: "{{url}}"
              emiSubvention: false
              emiTransaction: false
              paymentMode: {
