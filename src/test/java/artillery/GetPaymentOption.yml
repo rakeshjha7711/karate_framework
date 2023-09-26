@@ -13,15 +13,15 @@ config:
   defaults:
     headers:
       Content-Type: application/json
-      Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJtb2JpbGVOdW1iZXIiOiIrOTEyNDAwMDAwMzAwIiwiZGV2aWNlSWQiOiI3MTU0N0I3RS1EMDBFLTQ2NkMtOTQ2RS0yOTI5MzZGOEVCRDMiLCJjaGFubmVsIjoiYXBwIiwibWVyY2hhbnRJZCI6InVrQHdhZDdTaSIsImFtb3VudCI6IjEuNSIsImN1cnJlbmN5IjoiSU5SIiwibWVyY2hhbnRPcmRlcklkIjoiS09UQUstMTIwOTAyOTQ0MzU0MzM2NSIsImNhbGxiYWNrVXJsIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvcHJvY2Vzc1BheW1lbnQiLCJlbWlTdWJ2ZW50aW9uIjpmYWxzZSwiZW1pVHJhbnNhY3Rpb24iOmZhbHNlLCJwYXltZW50TW9kZSI6eyJibnBsIjpbeyJwYXltZW50Q2hhbm5lbElkIjoicmluZ19ibnBsX2NhcmRsZXNzXyoiLCJhbW91bnQiOiIxLjUifV19LCJzb3VyY2UiOiJzZWN1cmUtMmZyIiwiaWF0IjoxNjc2NTQ2MzQzLCJleHAiOjE2NzY1NDcyNDN9.fIXxVScE8jcFKvu4YZTc8FyuG7Vfv3ZLNSlVubKzOQ0
+      Authorization: {{auth}}
       TENANT: KOTAK_BNPL
-      public-key: Bearer cGtfbGl2ZV94NjIzRkpNZmFJbmk6c2tfbGl2ZV9xeUVwSUJaQWQxcG1aNk9oMklUOG43UjlmSzFVbmM2aEQ3VGtHSUxy
+      public-key: Bearer {{public key}}
       User-Agent: PostmanRuntime/7.31.1 
 scenarios:
   - name: "get payment option"
     flow:
       - post:
-          url: "/api/v1/bnpl/getPaymentOptions"
+          url: "{{url}}"
           json:
             mobileNumber: "+912400000300"
             deviceId: "9F0D7162-F90E-41B7-8357-88891C33F0ED"
