@@ -101,4 +101,7 @@ I am adding below once sample screenshot for success test cases.
 
 ![success_report](https://github.com/rakeshjha7711/karate_framework/assets/144904006/f996de36-f7c7-4585-8e33-06457a29b60f)
 
+**Failed test cases screenshot**
+![testcases_failed](https://github.com/rakeshjha7711/karate_framework/assets/144904006/f6fcae39-033c-44a2-b31c-f11552275c16)
+
 
