@@ -94,5 +94,11 @@ Feature: Data-Driven Testing Example
     | { "value": "123" } | 200           | { "result": "success" }    |
     | { "value": "456" } | 404           | { "result": "not found" }  |
 
+**Screenshot**
+Once test cases run successfully, you will get html file under /target/karate-reports. open that html will into browser and you can see full reports of success/failed test cases with details logs.
+I am adding below once sample screenshot for success test cases.
+
+
+![success_report](https://github.com/rakeshjha7711/karate_framework/assets/144904006/f996de36-f7c7-4585-8e33-06457a29b60f)
 
 
